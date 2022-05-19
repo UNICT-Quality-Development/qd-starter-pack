@@ -15,7 +15,7 @@ pip install -r requirements_dev.txt
 How to run properly the tests with the related html report:
 
 ```bash
-$ pytest --cov src tests/ --cov-report=html --cov-fail-under=75
+$ pytest --cov src tests/ --cov-report=html
 ```
 
 ### Contributing
