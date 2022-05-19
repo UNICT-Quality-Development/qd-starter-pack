@@ -1,6 +1,6 @@
-from main import main_sum
-from src.check import sum2
+from src.sum import sum
 
 def test_main_sum() -> None:
-    assert main_sum(3,4) == 7
-    assert sum2(3,4) == 7
+    assert sum(3,4) == 7
+    assert sum(0,0) == 0
+    assert sum(1.5,2) == 3.5
