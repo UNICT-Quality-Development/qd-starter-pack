@@ -18,6 +18,9 @@ How to run properly the tests with the related html report:
 $ pytest --cov src tests/ --cov-report=html
 ```
 
+### Clean code
+Check [this article](https://testdriven.io/blog/clean-code-python/) to understand how to write "clean code" in python.
+
 ### Contributing
 
 Feel free to improve this poor README with any other detail, if you do it, I'll be grateful.
