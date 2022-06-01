@@ -12,7 +12,7 @@ tests: List[dict] = [
 ]
 
 @pytest.mark.parametrize("test", tests)
-def test_binary(mocker: MockerFixture, test: dict) -> None:
+def test_randnum(mocker: MockerFixture, test: dict) -> None:
     #arrange
     mocker.patch.object(randnum, "rand", return_value = test["mock_return"])
 
