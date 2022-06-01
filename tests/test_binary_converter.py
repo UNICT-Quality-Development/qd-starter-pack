@@ -8,7 +8,8 @@ from src import binary_converter
 tests: List[dict] = [
     {"mock_return" : "110", "param" : 6},
     {"mock_return" : "1111111", "param" : 127},
-    {"mock_return" : "11010010010011", "param" : 13459}
+    {"mock_return" : "11010010010011", "param" : 13459},
+    {"mock_return" : "0", "param" : 0}
 ]
 
 @pytest.mark.parametrize("test", tests)

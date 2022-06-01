@@ -9,6 +9,8 @@
 import math
 
 def bin_conv(dec : int) -> str:
+    if dec == 0:
+        return "0"
     numbin : str = ""
     i = int(math.log(dec, 2)+1)
     while i > 0:
