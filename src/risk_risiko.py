@@ -24,7 +24,7 @@
 
 import random
 
-def risiko() -> None:
+def risiko() -> bool:
     russia : list[int] = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)] #red
     ukraine : list[int] = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)] #blue
 
@@ -33,6 +33,7 @@ def risiko() -> None:
             print("Red win, with " + str(russia[i]) + " vs " + str(ukraine[i]) + "!\n")
         else:
             print("Blue win, with " + str(ukraine[i]) + " vs " + str(russia[i]) + "!\n")
+    return 0
 
 if __name__ == "__main__":
     risiko()
