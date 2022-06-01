@@ -8,7 +8,7 @@
 
 import math
 
-def binary_converter(dec : int) -> str:
+def bin_conv(dec : int) -> str:
     numbin : str = ""
     i = int(math.log(dec, 2)+1)
     while i > 0:
@@ -19,5 +19,5 @@ def binary_converter(dec : int) -> str:
 
 
 if __name__ == "__main__":
-    print(binary_converter(255))
+    print(bin_conv(255))
     
