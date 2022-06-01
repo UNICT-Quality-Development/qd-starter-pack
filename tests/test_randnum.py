@@ -17,7 +17,7 @@ def test_binary(mocker: MockerFixture, test: dict) -> None:
     mocker.patch.object(randnum, "rand", return_value = test["mock_return"])
 
     #act
-    ret : str = rand(test["seed"], test["param1"], test["param2"])
+    ret : int = rand(test["seed"], test["param1"], test["param2"])
 
     #assert
     assert (ret == test["mock_return"]) is True
