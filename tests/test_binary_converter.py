@@ -14,7 +14,7 @@ tests: List[dict] = [
 @pytest.mark.parametrize("test", tests)
 def test_binary(mocker: MockerFixture, test: dict) -> None:
     #arrange
-    mocker.patch.object(binary_converter, "bin_conv", return_value = test["param"])
+    mocker.patch.object(binary_converter, "bin_conv", return_value = test["mock_return"])
 
     #act
     ret : str = bin_conv(test["param"])
