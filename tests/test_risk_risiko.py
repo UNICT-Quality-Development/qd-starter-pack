@@ -4,9 +4,9 @@ from src.risk_risiko import risiko
 from src import risk_risiko
 
 
-def test_risiko(mocker: MockerFixture, test: dict) -> None:
+def test_risiko(mocker: MockerFixture) -> None:
     #act
-    ret : str = risiko()
+    ret : bool = risiko()
 
     #assert
-    assert ret is False
+    assert bool(ret) is True

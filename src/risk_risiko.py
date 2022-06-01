@@ -33,7 +33,7 @@ def risiko() -> bool:
             print("Red win, with " + str(russia[i]) + " vs " + str(ukraine[i]) + "!\n")
         else:
             print("Blue win, with " + str(ukraine[i]) + " vs " + str(russia[i]) + "!\n")
-    return 0
+    return 1
 
 if __name__ == "__main__":
     risiko()
