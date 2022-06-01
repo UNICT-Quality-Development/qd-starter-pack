@@ -1,8 +1,8 @@
 
 
-def bynary_converter():
-    n=input("Dammi un numero ")
+def bynary_converter(n:int):
+    
 
     return bin(int(n)).replace("0b", "")  
-
-print(bynary_converter())ciao
+#n=input("Dammi un numero ")
+#print(bynary_converter(n))
