@@ -20,4 +20,4 @@ def test_randnum(mocker: MockerFixture, test: dict) -> None:
     ret : int = rand(test["seed"], test["param1"], test["param2"])
 
     #assert
-    assert (ret == test["mock_return"]) is True
+    assert (ret == test["mock_return"])
