@@ -3,13 +3,12 @@ import src.ex3
 
 
 def test_get_description():
+    # Arrange
+    names = ['BarackObama','SandroPertini','NelsonMandela','MahatmaGandhi','DonaldKnuth','DennisRitchie']
+    
     # Assert
-    assert src.ex3.get_description('BarackObama') == src.ex3.BIOS['BarackObama']
-    assert src.ex3.get_description('SandroPertini') == src.ex3.BIOS['SandroPertini']
-    assert src.ex3.get_description('NelsonMandela') == src.ex3.BIOS['NelsonMandela']
-    assert src.ex3.get_description('MahatmaGandi') == src.ex3.BIOS['MahatmaGandi']
-    assert src.ex3.get_description('DonaldKnuth') == src.ex3.BIOS['DonaldKnuth']
-    assert src.ex3.get_description('DennisRitchie') == src.ex3.BIOS['DennisRitchie']
+    for name in names:
+        assert src.ex3.get_description(name) == src.ex3.BIOS[name]
     assert src.ex3.get_description('FakeName') == 'Invalid input! Please enter a good name!'
 
 
