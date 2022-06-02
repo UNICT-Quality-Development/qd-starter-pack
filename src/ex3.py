@@ -2,7 +2,7 @@ BIOS = {
     'BarackObama': '44th President of the United States',
     'SandroPertini': 'Former President of the Italian Republic',
     'NelsonMandela': 'Former President of South Africa',
-    'MahatmaGandi': 'Bapu',
+    'MahatmaGandhi': 'Bapu',
     'DonaldKnuth': 'Creator of LaTeX',
     'DennisRitchie': 'Creator of C',
 }
