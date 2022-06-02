@@ -24,19 +24,18 @@
 
 import random
 
-def risiko() -> bool:
-    russia : list[int] = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)] #red
-    ukraine : list[int] = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)] #blue
 
-    for i in range(3):
-        if russia[i] > ukraine[i]:
-            print("Red win, with " + str(russia[i]) + " vs " + str(ukraine[i]) + "!\n")
-        else:
-            print("Blue win, with " + str(ukraine[i]) + " vs " + str(russia[i]) + "!\n")
-    return 1
+def risiko(russia : int, ukraine : int) -> None:
+    if russia > ukraine:
+        print("Red win!")
+        return 1
+    print("Blue win!")
+    return 0
+
 
 if __name__ == "__main__":
-    risiko()
+    for i in range(3):
+        risiko(random.randint(1,6), random.randint(1,6))
 
 #слава україні
 
