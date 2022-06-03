@@ -20,4 +20,4 @@ def test_ex3(mocker: MockerFixture, test: dict) -> None:
     ret : str = famous_names(test["name"])
 
     #assert
-    assert (ret == test["mock_return"]) is True
+    assert (ret == test["mock_return"])

@@ -20,6 +20,4 @@ def bin_conv(dec : int) -> str:
     return numbin
 
 
-if __name__ == "__main__":
-    print(bin_conv(255))
     

@@ -20,4 +20,4 @@ def test_ex4(mocker: MockerFixture, test: dict) -> None:
     ret : str = months(test["month"])
 
     #assert
-    assert (ret == test["mock_return"]) is True
+    assert (ret == test["mock_return"])
