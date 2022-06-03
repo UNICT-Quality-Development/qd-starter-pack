@@ -8,11 +8,10 @@
 
 
 res = ""
-def toBinary(n):
+def to_binary(n: int) -> str:
     global res
     res = ""
     while (n):
-        print(n)
         if n%2 == 0:
             res += '0'
         else:
@@ -21,5 +20,6 @@ def toBinary(n):
 
     return res[::-1]
 
-n = int(input("Insert first number: "))
-print("The binary number is: ", toBinary(n))
+if __name__ == "__main__":
+    n = int(input("Insert first number: "))
+    print("The binary number is: ", to_binary(n))

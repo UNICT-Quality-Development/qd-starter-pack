@@ -1,6 +1,6 @@
-from src.binary_converter import toBinary
+from src.binary_converter import to_binary
 
 def test_binary_converter()->None:
-    assert toBinary(8) = "1000"
-    assert toBinary(4) = "100"
-    assert toBinary(17) = "10001"
+    assert to_binary(8) == "1000"
+    assert to_binary(4) == "100"
+    assert to_binary(17) == "10001"
