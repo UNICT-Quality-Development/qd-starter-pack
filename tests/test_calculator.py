@@ -2,7 +2,7 @@
 from typing import List
 import pytest
 from pytest_mock import MockerFixture
-from src import calculator
+from src.calculator import calculator
 
 # dict = dictionary (is a set of key:value pairs)
 tests: List[dict] = [
