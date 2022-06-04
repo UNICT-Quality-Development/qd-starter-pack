@@ -6,9 +6,9 @@ from src import risk_risiko
 
 
 tests: List[dict] = [
-    {"mock_return" : [0,1,0], "param1" : [3, 5, 4], "param2" : [3, 2, 6]},
+    {"mock_return" : [0,0,1], "param1" : [5, 4, 3], "param2" : [5, 4, 2]},
     {"mock_return" : [0,0,0], "param1" : [0, 0, 0], "param2" : [0, 0, 0]},
-    {"mock_return" : [1,1,1], "param1" : [4, 5, 6], "param2" : [1, 2, 3]},
+    {"mock_return" : [0,1,1], "param1" : [5, 4, 3], "param2" : [6, 2, 1]},
 ]
 
 @pytest.mark.parametrize("test", tests)

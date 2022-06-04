@@ -27,6 +27,8 @@ import random
 
 def risiko(russia: list, ukraine: list) -> list:
     ret: list = []
+    russia.sort(reverse=True)
+    ukraine.sort(reverse=True)
     for i in range(3):
         if russia[i] > ukraine[i]:
             print("Red win, with " + str(russia[i]) + " vs " + str(ukraine[i]))
