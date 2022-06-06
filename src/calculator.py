@@ -1,44 +1,40 @@
 from random import randint
 
-def sum(a, b):
+def sum(a: float, b: float)-> float:
     return a + b
 
-def difference(a, b):
+def difference(a: float, b: float)-> float:
     return a - b
 
-def multiplication(a, b):
+def multiplication(a: float, b: float)-> float:
     return a * b
 
-def division(a, b):
+def division(a: float, b: float)-> float:
     return a / b    
 
-def first_number():
+def first_number()-> float:
     print("Insert first number:")
     first_number = float ( input() )
 
     return first_number
 
-def second_number():
+def second_number()-> float:
     print("Insert second number:")
     second_number = float ( input() )   
 
     return second_number
      
-def calculate():  
+def calculate()-> float:  
     first_num = first_number()
     second_num = second_number()  
     random_num = randint(0, 3)
 
     match random_num:  
         case 0: 
-            sum_result = sum(first_num, second_num)
-            return sum_result
+            return sum(first_num, second_num)
         case 1: 
-            difference_result = difference(first_num, second_num)
-            return difference_result
+            return difference(first_num, second_num)
         case 2: 
-            multiplication_result = multiplication(first_num, second_num) 
-            return multiplication_result
-        case 3: 
-            division_result = division(first_num, second_num) 
-            return division_result  
+            return multiplication(first_num, second_num) 
+        case 3:  
+            return division(first_num, second_num)   
