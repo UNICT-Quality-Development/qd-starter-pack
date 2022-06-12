@@ -1,4 +1,3 @@
-from calendar import week
 from src.ex2 import week_list
 import pytest
 def test_week() -> None:
