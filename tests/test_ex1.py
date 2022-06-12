@@ -1,4 +1,3 @@
-from typing_extensions import assert_never
 from src.ex1 import days
 
 def test_days() -> None:
