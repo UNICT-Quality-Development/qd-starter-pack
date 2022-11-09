@@ -1,7 +1,7 @@
 # N = int(input("inserisci un numero: "))
 
 
-def convert(N):
+def convert(N: int) -> str:
     MAX_BITS = 32
 
     j = MAX_BITS - 1
