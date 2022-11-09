@@ -7,5 +7,4 @@ if __name__ == "__main__":
         print(f'Result: "{data[value]}".')
     else:
         print('Invalid input! Please enter a good name!')
-
     
