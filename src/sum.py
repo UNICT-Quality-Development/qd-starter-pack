@@ -1,7 +1,7 @@
-def sum(a:float, b:float) -> float:
+def sum(a: float, b: float) -> float:
     return a+b
 
-a = float(input("Choose the first number: "))
-b = float(input("Choose the second number: "))
+number1 = float(input("Choose the first number: "))
+number2 = float(input("Choose the second number: "))
 
-print("Sum = ", sum(a,b))
+print("Sum = ", sum(number1,number2))
