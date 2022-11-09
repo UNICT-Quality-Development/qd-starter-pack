@@ -1,8 +1,10 @@
 from random import randint
 
 
-def main():
+def main() -> None:
     print("The random number is:", randint(1, 100))
+    return None
 
 
-main()
+if __name__ == "__main__":
+    main()

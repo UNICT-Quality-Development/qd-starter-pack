@@ -11,10 +11,12 @@ def mol(a: int, b: int) -> int:
 
 
 def div(a: int, b: int) -> int:
+    if b == 0:
+        return "Error: can't divide by 0."
     return a // b
 
 
-def main():
+def main() -> None:
     a = int(input("Insert first number: "))
     b = int(input("Insert second number: "))
 
@@ -23,5 +25,8 @@ def main():
     print("Moltiplication:", mol(a, b))
     print("Division:", div(a, b))
 
+    return None
 
-main()
+
+if __name__ == "__main__":
+    main()
