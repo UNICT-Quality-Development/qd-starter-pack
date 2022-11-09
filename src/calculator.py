@@ -9,3 +9,4 @@ st = numb1 - numb2
 print(f'SUM: {s}')
 print(f'Difference: {st}')
 print(f'Multiplication: {m}')
+print(f'Division: {d}')
