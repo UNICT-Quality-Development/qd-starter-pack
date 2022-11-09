@@ -14,4 +14,5 @@ def convert(N: int) -> str:
         j -= 1
     return "".join([str(x) for x in bits])
 
-print(convert(10))
+if __name__ == "__main__":
+    print(convert(10))
