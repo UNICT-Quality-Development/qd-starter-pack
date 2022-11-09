@@ -6,3 +6,4 @@ if __name__ == "__main__":
 
     if number in N: print(f"The number {number} is present in the array")
     else: print(f"The number {number} is not present in the array")
+    
