@@ -8,6 +8,6 @@ def dec_bin(num: int) -> int:
         num = int(num/2)
     return binary
 
-number = int(input("Insert first number: "))
-
-print("The binary number is: "+dec_bin(number))
+if __name__ == "__main__":
+    number = int(input("Insert first number: "))
+    print("The binary number is: "+dec_bin(number))
