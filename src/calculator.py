@@ -16,4 +16,13 @@ print('Insert second number: ')
 m=input()
 
 print('Sum: ')
-print (n+m)
+print(n+m)
+
+print('Difference: ')
+print(n-m)
+
+print('Multiplication: ')
+print(n*m)
+
+print('Division: ')
+print(n/m)
