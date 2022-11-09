@@ -6,6 +6,9 @@ m = numb1 * numb2
 d = numb1 / numb2
 st = numb1 - numb2
 
+print()
+print()
+
 print(f'SUM: {s}')
 print(f'Difference: {st}')
 print(f'Multiplication: {m}')
