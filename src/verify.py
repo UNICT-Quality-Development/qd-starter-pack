@@ -5,7 +5,10 @@ Insert number 3
 The number 3 is [not] present in the array.
 '''
 
-N = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
+def verify() -> None:
+    N = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
+    num = int(input("Insert number "))
+    print(f'The number {num} is {"not" if num not in N else ""} present in the array')
 
-num = int(input("Insert number "))
-print(f'The number {num} is {"not" if num not in N else ""} present in the array')
+if __name__ == "__main__":
+    verify()
