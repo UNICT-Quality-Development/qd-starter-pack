@@ -9,10 +9,10 @@
   # Division: 2
 
 def calculator(num1: int, num2: int) -> int:
-  print("SUM: " + str(num1 + num2) )
-  print("Difference: " + str(num1 - num2) )
-  print("Multiplication: " + str(num1 * num2) )
-  print("Division: " + str(num1 / num2) )
+  print(f"SUM: {num1 + num2}")
+  print(f"Difference: {num1 - num2}" )
+  print(f"Multiplication: {num1 * num2}" )
+  print(f"Division: {num1 / num2}" )
 
 
 if __name__ == '__main__':
