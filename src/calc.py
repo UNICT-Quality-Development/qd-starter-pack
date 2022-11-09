@@ -16,3 +16,11 @@ num2=input()
 print('somma: ')
 print(num1+num2)
 
+print('differenza: ')
+print(num1-num2)
+
+print('moltiplicazione: ')
+print(num1*num2)
+
+print('divisione: ')
+print(num1/num2)
