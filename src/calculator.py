@@ -27,4 +27,4 @@ if __name__ == "__main__":
     print(f"Difference: {difference(first, second)}")
     print(f"Multiplication: {multiplication(first, second)}")
     print(f"Division: {division(first, second)}")
-    
+        
