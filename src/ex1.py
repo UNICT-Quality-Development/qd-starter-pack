@@ -10,12 +10,16 @@ def week(i):
     "Sunday"
     ]
 
-    if( int(i) < 1 or int(i) > 7 ): 
+    if int(i) < 1 or int(i) > 7 : 
         index = 0
     else: 
         index = i
     return days[int(index)]
 
+
 print("Enter week number(1-7): ")
 number = input()
-print(week(number))
+
+if __name__ == "__main__":
+   print(week(number))
+
