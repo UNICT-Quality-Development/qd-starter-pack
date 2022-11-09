@@ -5,7 +5,7 @@
 #   SUM: 6
 #   Difference: 2
 #   Multiplication: 8
-#   Division: 2 
+#   Division: 2
 
 def sum(x: float, y: float) -> float:
     return x+y
@@ -23,7 +23,8 @@ if __name__ == "__main__":
     first = float(input("insert first number: "))
     second = float(input("insert second number: "))
 
-    print("SUM: {}".format(sum(first, second)))
-    print("Difference: {}".format(difference(first, second)))
-    print("Multiplication: {}".format(multiplication(first, second)))
-    print("Division: {}".format(division(first, second)))
+    print(f"SUM: {sum(first, second)}")
+    print(f"Difference: {difference(first, second)}")
+    print(f"Multiplication: {multiplication(first, second)}")
+    print(f"Division: {division(first, second)}")
+    
