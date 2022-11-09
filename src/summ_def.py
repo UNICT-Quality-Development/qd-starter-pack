@@ -3,6 +3,6 @@ numb2 = input('Insert the second numb: ')
 
 s = int(0)
 
-s = numb1 + numb2
+s = sum(numb1, numb2)
 
 print('The sum is: '+ s)
