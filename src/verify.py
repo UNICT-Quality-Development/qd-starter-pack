@@ -7,8 +7,7 @@ if __name__ == '__main__':
   N = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
 
   value = input('Insert number: ')
-
-  if ( int( value ) in N ): 
+  if ( value.isnumeric() and int( value ) in N ):
     print(f"The number {value} is  present in the array.")
-  else: 
+  else:
     print(f"The number {value} is not present in the array.")
