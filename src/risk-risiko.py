@@ -25,45 +25,36 @@
 """
 import random
 
+def throwing_dice() :
+  n = random.randint(1,6)
+  return n
+  
+def tuple_dices(name):
+  print(name ,"dices.. ")
+  dices = []
+  for x in range(3):
+    dices.append(throwing_dice())
+    if x == 3:
+      break
+  print(dices)
+  return dices
+
+
 def main():
-    
-    print ("Rolling attacker (red) dices.. \n")
-    atk_dice_n = random.randint(1,6)
-    atk_dice_m = random.randint(1,6)
-    atk_dice_o = random.randint(1,6)
-    attacker_dices = (atk_dice_n,atk_dice_m,atk_dice_o)
-    
-    # -Come creare un for con un indice per i vari confronti
-    print("Red dices :")
-    for x in attacker_dices:
-        print(x)
-    print("")
-    print ("Rolling attacker (blue) dices.. \n")
-    def_dice_n = random.randint(1,6)
-    def_dice_m = random.randint(1,6)
-    def_dice_o = random.randint(1,6)
-    defender_dices = (def_dice_n,def_dice_m,def_dice_o)
-
-    print("Blue dices :")
-    for y in defender_dices:
-        print(y)
-        
-    print ("\nR  vs  B  ")
-        
-    if attacker_dices[0] <= defender_dices[0]:
-        print(attacker_dices[0], " vs " , defender_dices[0] , " => blue wins")
-         
-    elif attacker_dices[0] > defender_dices[0]:
-        print(attacker_dices[0], " vs ", defender_dices[0] , "=> red wins")
-
-# -Come creare un for con un indice per i vari confronti
-#    i=[0,1,2]
-#    for x in i:
-#        if attacker_dices[i] <= defender_dices[i]:
-#          x =  print(attacker_dices[i], " vs " , defender_dices[i] , " => blue wins")
-#         
-#        elif attacker_dices[i] > defender_dices[i]:
-#          x =   print(attacker_dices[i], " vs ", defender_dices[i] , "=> red wins")
-
-main()
-    
+  
+  atk = []
+  defn = []
+  tanks = ["N","M","O"]
+  
+  atk= tuple_dices("Red team")
+  defn = tuple_dices("Blue team")
+  print("")
+  print("  R  VS  B")
+  for x in range(3):
+    if atk[x] > defn[x]:
+      print(tanks[x],atk[x]," vs " ,defn[x], "=> Red team wins")
+    elif atk[x] <= defn[x]:
+      print(tanks[x],atk[x]," vs ",defn[x], "=> Blue team wins")
+  
+if __name__ == "__main__":
+  main()
