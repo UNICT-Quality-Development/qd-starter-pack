@@ -34,8 +34,6 @@ def tuple_dices(name):
   dices = []
   for x in range(3):
     dices.append(throwing_dice())
-    if x == 3:
-      break
   print(dices)
   return dices
 
@@ -52,9 +50,11 @@ def main():
   print("  R  VS  B")
   for x in range(3):
     if atk[x] > defn[x]:
-      print(tanks[x],atk[x]," vs " ,defn[x], "=> Red team wins")
+      team_win = "red "
     elif atk[x] <= defn[x]:
-      print(tanks[x],atk[x]," vs ",defn[x], "=> Blue team wins")
+      team_win = "blue"
+    
+    print(tanks[x],atk[x]," vs ",defn[x], "=>", team_win," team wins")
   
 if __name__ == "__main__":
   main()
