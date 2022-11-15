@@ -30,3 +30,6 @@ jobs:
       - name: Lint with pylint
         run: |
           pylint src
+      - name: Test with pytest
+        run: |
+          pytest --cov src tests/ --cov-fail-under=75
