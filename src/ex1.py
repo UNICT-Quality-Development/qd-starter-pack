@@ -1,23 +1,27 @@
 #Improve this program using a switch-case. 
-week=int(input("Insert a number from 1 to 7: "))
-    
-match week: 
-    case 1:
-        print("It's Monday")
-    case 2:
-        print("It's Tuesday")
-    case 3:
-        print("It's Wednesday")
-    case 4:
-        print("It's Thursday")
-    case 5:
-        print("It's Friday")
-    case 6:
-        print("It's Saturday")
-    case 7:
-        print("It's Sunday")
-    case default:
-        print("There isn't any day with this number.")
+def match_days(x: int) -> str: 
+    match week: 
+        case 1:
+            return print("It's Monday")
+        case 2:
+            return print("It's Tuesday")
+        case 3:
+            return print("It's Wednesday")
+        case 4:
+            return print("It's Thursday")
+        case 5:
+            return print("It's Friday")
+        case 6:
+            return print("It's Saturday")
+        case 7:
+            return print("It's Sunday")
+        case default:
+            return print("There isn't any day with this number.")
+
+if __name__=='__main__':
+
+    week=int(input("Insert a number from 1 to 7: "))
+    match_days(week)
 
 
 
