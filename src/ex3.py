@@ -1,6 +1,7 @@
 #  Could you still use a switch case here? May you can use a map. 
 
-
+def is_in_list(name_list: dict, name: str) -> bool:
+  return name in name_list
 
 if __name__ == '__main__':
   textInput = input("Enter a famous name+surname, ex. BarackObama ")
@@ -12,7 +13,8 @@ if __name__ == '__main__':
             "DonaldKnuth": "Creator of LaTeX", 
             "DennisRitchie": "Creator of C"
           }
-  if ( textInput in names ):
+
+  if ( is_in_list(names, textInput) ):
     print(names[textInput])
   else:
     print("Invalid input! Please enter a good name!")
