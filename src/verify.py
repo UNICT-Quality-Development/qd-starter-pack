@@ -3,7 +3,7 @@ def verify(n: list, number: int) -> bool:
         return True
     return False
 
-if __name__ == "__main__":
+def main():
     N = (3, 4, 5, 1, 2, 3, 4, 9, 13, 0)
 
     number = int(input("Insert number: "))
@@ -12,3 +12,6 @@ if __name__ == "__main__":
         print(f"The number {number} is present in the array")
     else:
         print(f"The number {number} is not present in the array")
+
+if __name__ == "__main__":
+   main()
