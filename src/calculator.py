@@ -1,4 +1,4 @@
-
+from typing import List
 #   Write a program that given two numbers as input make the main operations.
 
 #   Output:
@@ -10,19 +10,19 @@
 #   Multiplication: 8
 #   Division: 2
 
-def sum (x: int, y: int) -> int:
+def sum (x: float, y: float) -> float:
     return x + y
 
-def difference (x: int, y: int) -> int:
+def difference (x: float, y: float) -> float:
     return x - y
 
-def multiplication (x: int, y: int) -> int:
+def multiplication (x: float, y: float) -> float:
     return x * y
 
-def division (x: int, y: int) -> float:
+def division (x: float, y: float) -> float:
     return x / y
 
-def all(x: int, y: int) -> None:
+def all(x: float, y: float) -> List[float]:
     return [
         sum(x,y),
         difference(x,y),
