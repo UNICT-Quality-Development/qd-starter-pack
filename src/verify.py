@@ -1,10 +1,9 @@
 def verify(numbers: tuple[str, ...], number: str) -> str:
     return "" if number in numbers else " not"
 
+list_numbers = ('1','2','3','4','5','6','7','8','9','10')
 
 def main():
-    list_numbers = ('1','2','3','4','5','6','7','8','9','10')
-
     number = input("Insert a number: ")
     check = verify(list_numbers,number)
     
