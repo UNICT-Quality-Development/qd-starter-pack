@@ -1,7 +1,5 @@
 def check(n: list, number: int) -> bool:
-    if number in n:
-        return True
-    return False
+    return number in n
 
 def main(N: list, number: int) -> str:
     if check(N, number) is True: 
