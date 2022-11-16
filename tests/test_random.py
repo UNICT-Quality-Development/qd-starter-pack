@@ -12,6 +12,7 @@ def test_random(mocker: MockerFixture) -> None:
     res = random_number.generate()
 
     # assert
-    assert res <= 10 and res >= 1
+    assert 1 <= res <= 10
     assert spy.call_count == 1
     assert spy.spy_return == mock_random_return
+    assert spy.called_with(1,10)
