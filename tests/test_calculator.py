@@ -18,3 +18,4 @@ def test_moltiplicazione():
 def test_divisione():
     assert divisione(6, 3) == 2
     assert divisione(5, 2) == 2.5
+    assert divisione(5, 0) == ZeroDivisionError
