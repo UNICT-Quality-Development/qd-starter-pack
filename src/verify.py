@@ -3,14 +3,14 @@
 # Insert number 3
 # The number 3 is [not] present in the array.
 
-def verify(N: list[int], value: int ):
-  
-  if ( value.isnumeric() and int( value ) in N ):
+def verify(value_list: list[int], value: int ):
+
+  if ( int( value ) in value_list ):
     print(f"The number {value} is  present in the array.")
   else:
     print(f"The number {value} is not present in the array.")
 
 if __name__ == '__main__':
   N = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
-  verify(N)
+  verify(N, 3)
   
