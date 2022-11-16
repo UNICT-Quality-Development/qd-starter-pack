@@ -3,13 +3,13 @@ from src.verify import check
 from src.verify import main
 from pytest_mock import MockerFixture
 
+N = (3, 4, 5, 1, 2, 3, 4, 9, 13, 0)
+
 def test_verify():
-    N = (3, 4, 5, 1, 2, 3, 4, 9, 13, 0)
-    assert check(N, 4) == True
+    assert check(N, 4)
     assert check(N, 10) == False
 
 def test_main_a(mocker: MockerFixture):
-    N = (3, 4, 5, 1, 2, 3, 4, 9, 13, 0)
     mock_verify_return = True
     mocker.patch(__name__ + '.check', return_value = mock_verify_return)
     spy = mocker.spy(src.verify, "check")
@@ -21,7 +21,6 @@ def test_main_a(mocker: MockerFixture):
     assert spy.spy_return == mock_verify_return
 
 def test_main_b(mocker: MockerFixture):
-    N = (3, 4, 5, 1, 2, 3, 4, 9, 13, 0)
     mock_verify_return = False
     mocker.patch(__name__ + '.check', return_value = mock_verify_return)
     spy = mocker.spy(src.verify, "check")
