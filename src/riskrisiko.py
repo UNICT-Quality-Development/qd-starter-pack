@@ -57,5 +57,4 @@ def main():
     print(tanks[x],atk[x]," vs ",defn[x], "=>", team_win," team wins")
   
 if __name__ == "__main__":
-  main()
-  
+    main()
