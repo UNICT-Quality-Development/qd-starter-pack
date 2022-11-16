@@ -3,8 +3,8 @@
 # Insert number 3
 # The number 3 is [not] present in the array.
 
-def verify(N: list[int] ):
-  value = input('Insert number: ')
+def verify(N: list[int], value: int ):
+  
   if ( value.isnumeric() and int( value ) in N ):
     print(f"The number {value} is  present in the array.")
   else:
