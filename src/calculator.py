@@ -7,21 +7,21 @@
 #  Multiplication: 8
 #  Division: 2
 
-def somma(a: int, b: int) -> int:
+def somma(a: float, b: float) -> float:
     return a + b
 
-def differenza(a: int, b: int) -> int:
+def differenza(a: float, b: float) -> float:
     return a - b
 
-def moltiplicazione(a: int, b: int) -> int:
+def moltiplicazione(a: float, b: float) -> float:
     return a * b
 
-def divisione(a: int, b: int) -> int:
+def divisione(a: float, b: float) -> float: 
     return a / b
 
 if __name__ == "__main__":
-    x = int(input("Insert first number: "))
-    y = int(input("Insert second number: "))
+    x = float(input("Insert first number: "))
+    y = float(input("Insert second number: "))
 
     print(f"SUM: {somma(x, y)}")
     print(f"Difference: {differenza(x, y)}")
