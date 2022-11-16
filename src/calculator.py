@@ -17,6 +17,8 @@ def moltiplicazione(a: float, b: float) -> float:
     return a * b
 
 def divisione(a: float, b: float) -> float: 
+    if b == 0:
+        return ZeroDivisionError
     return a / b
 
 if __name__ == "__main__":
