@@ -16,5 +16,4 @@ def division(a: int, b: int) -> str:
             return str(int(a/b))
         except ZeroDivisionError:
             return "Can't divide by 0"
-    else:
-        return "Make a or b integer"
+    return "Make a or b integer"
