@@ -9,11 +9,8 @@ The number 3 is [not] present in the array.
 numbers = [1, 2, 3, 12, 89, 69, 133, 56, 99, 100000]
 
 
-def look_for_number(number, array):
-    if number in array:
-        return True
-    else:
-        return False
+def look_for_number(number: int, array: list[int]) -> bool:
+    return number in array
 
 
 wantedInt = int(input("Scegli un numero da cercare nell'array: "))
