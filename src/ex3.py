@@ -1,8 +1,8 @@
-week = int(input('Enter week number (1-7): '))
+name_and_surname = input('Enter a famous name+surname, ex. BarackObama: ')
 
-week_days = {1: 'Monday', 2: 'Tuesday', 3: 'Wednesday', 4: 'Thursday', 5: 'Friday', 6:'Saturday', 7: 'Sunday'}
+description = {'BarackObama':'44th President of the United States','SandroPertini': 'Former President of the Italian Republic', 'NelsonMandela':'Former President of South Africa','MahatmaGandhi':'Bapu','DonaldKnuth':'Creator of LaTeX','DenisRitchie':'Creatore of C'}
 
-if week in week_days:
-    print(week_days[week])
+if name_and_surname in description:
+    print(description[name_and_surname])
 else:
-    print('Invalid week number')
+    print('Invalid input! Please enter a good name!')
