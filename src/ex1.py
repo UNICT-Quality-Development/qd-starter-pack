@@ -1,6 +1,5 @@
 # Improve this program using a switch-case.
 def day_of_the_week():
-    weekDay = 0
     # Input week number from user
     weekDay = int(input("Enter week number(1-7): "))
     match weekDay:
