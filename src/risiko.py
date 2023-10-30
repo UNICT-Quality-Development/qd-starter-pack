@@ -19,31 +19,28 @@ def compare_dice(red, blue) -> list[str]:
     return result
 
 
+def print_dice(dice: list[int], labels: list[str]):
+    # N: first highest number, M: second highest number, O: third highest number
+    for i in range(3):
+        print(f"{dice[i]} ({labels[i]})")
+
+
 # Visualizza i risultati, dando in input una lista di dadi rossi, una di dadi blu, e la lista di vittorie / sconfitte / pareggi
 def display_results(red, blue, comparison) -> None:
+    labels = [
+        "N",
+        "M",
+        "O",
+    ]
     print("Red dices:")
-    for i in range(3):
-        print(
-            f"{red[i]} (N)"
-            if i == 0
-            else f"{red[i]} (M)"
-            if i == 1
-            else f"{red[i]} (O)"
-        )
+    print_dice(red, labels)
 
     print("\nBlue dices:")
-    for i in range(3):
-        print(
-            f"{blue[i]} (N)"
-            if i == 0
-            else f"{blue[i]} (M)"
-            if i == 1
-            else f"{blue[i]} (O)"
-        )
+    print_dice(blue, labels)
 
     print("\n  R    B")
     for i in range(3):
-        print(f"N {red[i]} vs {blue[i]} => {comparison[i]}")
+        print(f"{labels[i]} {red[i]} vs {blue[i]} => {comparison[i]}")
 
 
 # Simula il lancio di dadi per attaccante e difensore
