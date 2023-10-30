@@ -19,7 +19,7 @@ def compare_dice(red, blue) -> list[str]:
     return result
 
 
-def print_dice(dice: list[int], labels: list[str]):
+def print_dice(dice: list[int], labels: list[str]) -> None:
     # N: first highest number, M: second highest number, O: third highest number
     for i in range(3):
         print(f"{dice[i]} ({labels[i]})")
