@@ -1,4 +1,4 @@
-def func(k:String):
+def func(k:str):
     match k:
         case "BarackObama":
             print("44th president of the United States")
@@ -16,5 +16,5 @@ def func(k:String):
             print("Inavlid input")
 
 print("Enter a famous name+surname, ex. BarackObama")
-k = input()
-func(k)
+z = input()
+func(z)
