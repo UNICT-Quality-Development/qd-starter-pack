@@ -9,12 +9,12 @@
 #   Multiplication: 8
 #   Division: 2
 
-first_number = int(input("Insert first number: "))
-second_number = int(input("Insert second number: "))
-print("SUM: ", first_number+second_number)
-print("Difference: ", first_number-second_number)
-print("Multiplication: ", first_number*second_number)
+x = int(input("Insert first number: "))
+y = int(input("Insert second number: "))
+print("SUM: ", x+y)
+print("Difference: ", x-y)
+print("Multiplication: ", x*y)
 try:
-    print("Division: ", first_number/second_number)
+    print("Division: ", x/y)
 except Exception as e:
     print(e)
