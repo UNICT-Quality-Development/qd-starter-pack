@@ -22,4 +22,3 @@ div=float(val_1/val_2)
 
 print('\nSum: ', SUM,'\nDifference: ', dif)
 print('\nMultiplication', mul,'\nDivision', div)
-
