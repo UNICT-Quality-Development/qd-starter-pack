@@ -2,9 +2,9 @@ def decimal_to_binary(n):
     b = ""
     while n > 0:
         if n % 2 == 0:
-            b = '0' + b
+            b = "0" + b
         else:
-            b = '1' + b
+            b = "1" + b
         n //= 2
     return b
 
