@@ -16,5 +16,5 @@ print("Difference: ", x-y)
 print("Multiplication: ", x*y)
 try:
     print("Division: ", x/y)
-except Exception as e:
-    print(e)
+except (Exception, ZeroDivisionError):
+    print("Division by zero is not allowed.")
