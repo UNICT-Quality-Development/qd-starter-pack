@@ -11,5 +11,3 @@ y = input("Insert the second number: ")
 sum = int(x)+int(y)
 
 print("Sum: ", sum)
-
-
