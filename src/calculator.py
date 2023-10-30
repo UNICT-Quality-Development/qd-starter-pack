@@ -22,3 +22,4 @@ a = float(input("Insert the first number: "))
 b = float(input("Insert the second number: "))
 
 calculator(a, b)
+
