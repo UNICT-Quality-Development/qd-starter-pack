@@ -6,7 +6,7 @@
 # Sum: 3
 
 def sum(a: int, b: int) -> int:
-  return a + b
+    return a + b
 
 # Input the first number
 num1 = int(input("Insert the first number: "))
@@ -15,4 +15,3 @@ num1 = int(input("Insert the first number: "))
 num2 = int(input("Insert the second number: "))
 
 print("Sum:", sum(num1, num2))
-
