@@ -28,7 +28,7 @@ while True:
 
     if input_utente == "uscita":
         break
-    elif input_utente in ("somma", "sottrazione", "moltiplicazione", "divisione"):
+    if input_utente in ("somma", "sottrazione", "moltiplicazione", "divisione"):
         num1 = float(input("Inserisci il primo numero: "))
         num2 = float(input("Inserisci il secondo numero: "))
 
