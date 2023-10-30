@@ -8,6 +8,4 @@
 x = input("Insert the first number: ")
 y = input("Insert the second number: ")
 
-sum = int(x)+int(y)
-
-print("Sum: ", sum)
+print("Sum: ", int(x)+int(y))
