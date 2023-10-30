@@ -1,4 +1,3 @@
-import sys
 '''
 Write a program that given two numbers as input make the main operations.
 
@@ -11,16 +10,14 @@ Difference: 2
 Multiplication: 8
 Division: 2
 '''
-def calculator(first:int, second:int)-> str:
-    sum = first + second
-    difference = first - second
-    multiplication = first * second
-    
-    if second != 0:
-        division = first / second
+def calculator(first_number:int, second_number:int):
+    sum = first_number + second_number
+    difference = first_number - second_number
+    multiplication = first_number * second_number
+    if second_number != 0:
+        division = first_number / second_number
     else:
         division = "Can't divide by 0"
-    
     print(f"Sum: {sum}")
     print(f"Difference: {difference}")
     print(f"Multiplication: {multiplication}")
