@@ -28,7 +28,7 @@
 
 import random
 
-def attack():
+def attack()->None:
     red_dices = []
     blue_dices = []
     red_points = 0
