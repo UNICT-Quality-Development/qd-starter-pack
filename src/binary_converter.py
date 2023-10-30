@@ -5,3 +5,6 @@
   Insert first number: 8
   The binary number is: 1000
 """
+print("Insert first number:")
+input = int(input())
+print("The binary number is:", bin(input))
