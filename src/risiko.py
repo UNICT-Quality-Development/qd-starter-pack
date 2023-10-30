@@ -20,13 +20,13 @@ def compare_dice(red, blue) -> list[str]:
 
 
 def print_dice(dice: list[int], labels: list[str]) -> None:
-    # N: first highest number, M: second highest number, O: third highest number
     for i in range(3):
         print(f"{dice[i]} ({labels[i]})")
 
 
 # Visualizza i risultati, dando in input una lista di dadi rossi, una di dadi blu, e la lista di vittorie / sconfitte / pareggi
 def display_results(red, blue, comparison) -> None:
+    # N: first highest number, M: second highest number, O: third highest number
     labels = [
         "N",
         "M",
