@@ -5,4 +5,9 @@
 
 import random
 
-print("The random number is: ", random.randint(0, 100))
+
+def randomInt(a: int, b: int) -> int:
+    return random.randint(a, b)
+
+
+print("The random number is: ", randomInt(1, 100))
