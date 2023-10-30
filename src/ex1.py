@@ -6,19 +6,19 @@ def func(a:int)->int:
         case 1:
              print("Monday")
         case 2:
-            print("Tuesday")
+             print("Tuesday")
         case 3:
-            print("Wednesady")
+             print("Wednesady")
         case 4:
-            print("Thursday")
+             print("Thursday")
         case 5:
-            print("Friday")
+             print("Friday")
         case 6:
-            print("Saturday")
+             print("Saturday")
         case 7:
-            print("Sunday")
+             print("Sunday")
         case _:
-           print("numero inserito errato")
+             print("numero inserito errato")
         
 
 print("inserisci numero da 1 a 7:")
