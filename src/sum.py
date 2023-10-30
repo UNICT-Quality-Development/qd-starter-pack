@@ -10,8 +10,8 @@ def Sum(a: int, b: int) -> int:
     return a + b
 
 
-a = int(input("Insert the first number : "))
+FirstNumber = int(input("Insert the first number : "))
 
-b = int(input("Insert the second number : "))
+SecondNumber = int(input("Insert the second number : "))
 
-print("Sum :", Sum(a, b))
+print("Sum :", Sum(FirstNumber, SecondNumber))
