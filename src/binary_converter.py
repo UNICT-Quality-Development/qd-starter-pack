@@ -7,4 +7,4 @@
 """
 print("Insert first number:")
 input = int(input())
-print("The binary number is:", bin(input))
+print("The binary number is:", bin(input).replace('0b', ''))
