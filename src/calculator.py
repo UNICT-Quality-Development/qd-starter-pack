@@ -16,5 +16,5 @@ print("Difference: ", first_number-second_number)
 print("Multiplication: ", first_number*second_number)
 try:
     print("Division: ", first_number/second_number)
-except ZeroDivisionError:
-    print("You cannot divide by 0")
+except Exception as e:
+    print(e)
