@@ -56,18 +56,19 @@ print('\n')
 
 match day_of_week:
     case 1:
-      print('its MONDAY\n')
+        print('its MONDAY\n')
     case 2:
-      print('its TUESDAY')
+        print('its TUESDAY')
     case 3:
-      print('its WEDNESDAY')
+        print('its WEDNESDAY')
     case 4:
-      print('its THURSDAY')
+        print('its THURSDAY')
     case 5:
-      print('its FRIDAY')
+        print('its FRIDAY')
     case 6:
-      print('its SATURDAY')
+        print('its SATURDAY')
     case 7:
-      print('its SUNDAY')
+        print('its SUNDAY')
     case _:
         print("Invalid input! Please enter week number between 1-7.\n")
+        
