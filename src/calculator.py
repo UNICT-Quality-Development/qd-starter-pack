@@ -26,7 +26,6 @@ def calculator(first:int, second:int)-> str:
     print(f"Multiplication: {multiplication}")
     print(f"Division: {division}")
 
-if(len(sys.argv) == 3):
-    calculator(int(sys.argv[1]), int(sys.argv[2]))
-else:
-    print("Error! Use 2 args <first number> <second number>")
+first:int = int(input("Insert first number: "))
+second:int = int(input("Insert second number: "))
+calculator(first, second)
