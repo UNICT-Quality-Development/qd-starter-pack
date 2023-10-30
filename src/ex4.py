@@ -1,6 +1,6 @@
 def func()->None:
     print("Enter month number(1-12):")
-     
+
     k = int(input())
     match k:
         case 1:
@@ -29,5 +29,5 @@ def func()->None:
             print("31 days")
         case _:
             print("error ")
-        
+
 func()
