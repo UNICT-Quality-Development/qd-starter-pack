@@ -11,7 +11,7 @@ def print_binary_number(n: int) -> None:
         return
     print_binary_number(n//2)
     print(n&1, end="")
-    
+
 k=int(input("Inserisci un numero\n"))
 print_binary_number(k)
 print()
