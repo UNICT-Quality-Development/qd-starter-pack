@@ -1,7 +1,11 @@
-/*
-  Write a program that given a number as input convert it in binary.
+def DecimalToBinary(num):
+     
+    if num >= 1:
+        DecimalToBinary(num // 2)
+    print(num % 2, end = '')
+ 
+if __name__ == '__main__':
+     
+    dec_val = 24
 
-  Output:
-  Insert first number: 8
-  The binary number is: 1000
-*/
+    DecimalToBinary(dec_val)
