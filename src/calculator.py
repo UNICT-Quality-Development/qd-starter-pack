@@ -11,7 +11,7 @@ Write a program that given two numbers as input make the main operations.
   Division: 2
 */
 #include <stdio.h>
-"""  
+"""
 
 def add(x, y):
     return x + y
