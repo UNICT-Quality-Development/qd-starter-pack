@@ -9,7 +9,7 @@
 # Multiplication: 8
 # Division: 2
 
-def calculator(a: float, b: float):
+def calculator(a: float, b: float) -> None:
     print("SUM: ", a + b)
     print("Difference: ", a - b)
     print("Multiplication: ", a * b)
