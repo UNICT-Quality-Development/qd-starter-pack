@@ -10,10 +10,10 @@
 # Division: 2
 
 def calculator(a: float, b: float):
-  print("Sum: ", a + b);
-  print("Difference: ", a - b);
-  print("Multiplication: ", a * b);
-  print("Division: ", a / b);
+    print("Sum: ", a + b);
+    print("Difference: ", a - b);
+    print("Multiplication: ", a * b);
+    print("Division: ", a / b);
 
 # Input the first number
 a = float(input("Insert the first number: "))
@@ -22,5 +22,3 @@ a = float(input("Insert the first number: "))
 b = float(input("Insert the second number: "))
 
 calculator(a, b);
-
-
