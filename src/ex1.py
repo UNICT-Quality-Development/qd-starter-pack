@@ -12,7 +12,6 @@ def giorno_della_settimana():
     }
 
     day = switch.get(week, "Input non valido! Inserisci un numero della settimana tra 1 e 7.")
-    
     return day
 
 print(giorno_della_settimana())
