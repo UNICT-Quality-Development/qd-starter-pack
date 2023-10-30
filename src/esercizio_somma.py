@@ -6,9 +6,7 @@
 
 def main():
     a = int(input("Insert the first number: "))
-    b = int(input("Insert the second number: "))
-    
-    
+    b = int(input("Insert the second number: "))  
     print("Sum:", sum(a, b))
 
 def sum(a: int, b: int) -> int:
