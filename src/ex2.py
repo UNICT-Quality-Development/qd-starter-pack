@@ -1,9 +1,7 @@
 
-
-
 giorniDellaSettimana = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 
-def func(a:int)->int:
+def func(a:int)->None:
     match a:
         case 1:
             print(giorniDellaSettimana[0])
@@ -21,7 +19,6 @@ def func(a:int)->int:
             print(giorniDellaSettimana[6])
         case _:
             print("numero inserito errato")
-        
 
 print("inserisci numero da 1 a 7:")
 k = int(input())
