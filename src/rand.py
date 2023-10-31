@@ -12,8 +12,8 @@ def gen_number() -> int:
 # siccome cambiano estremamente velocemente, appariranno randomici
 
 # visualizziamo 10 risultati
-
-results = [0 for i in range(10)]
+RESULTS_TO_DISPLAY = 10
+results = [0 for i in range(RESULTS_TO_DISPLAY)]
 
 for _ in range(10**5):
     results[gen_number()] += 1
