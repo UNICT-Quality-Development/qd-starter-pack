@@ -1,9 +1,11 @@
-import random
+from random import randint
 
 
 # Ritorna una lista che contiene 3 interi casuali da 1 a 6
 def roll_dice() -> list[int]:
-    return [random.randint(1, 6) for _ in range(3)]
+    MIN_NUMBER = 1  # PEP8 compliant constants
+    MAX_NUMBER = 6
+    return [randint(MIN_NUMBER, MAX_NUMBER) for _ in range(3)]
 
 
 # Controlla chi ha vinto, o se c'è stato una pareggio. Ritorna i risultati in una lista di stringhe
