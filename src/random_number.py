@@ -3,7 +3,13 @@
 #   Output:
 #   The random number is: 4
 
-import random
+from random import randint
 
-x = random.randint(0,1000)
+MIN_RAND_VALUE = 0
+MAX_RAND_VALUE = 1000
+
+def random_number(a: int, b: int) -> int:
+    return randint(a, b)
+
+x = random_number(MIN_RAND_VALUE, MAX_RAND_VALUE)
 print(x)
