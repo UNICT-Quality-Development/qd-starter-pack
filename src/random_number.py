@@ -4,6 +4,9 @@
   Output:
   The random number is: 4
 """
-import random
+from random import randint
 
-print("The random number is:", random.randint(0, 500))
+MIN_NUMBER = 0
+MAX_NUMBER = 500
+
+print("The random number is:", randint(MIN_NUMBER, MAX_NUMBER))
