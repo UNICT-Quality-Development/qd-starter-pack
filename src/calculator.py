@@ -26,11 +26,14 @@ def mod(a: int, b: int) -> int:
     return a % b
 
 
+def print_results(a: int, b: int) -> None:
+    print(sum(a, b))
+    print(sub(a, b))
+    print(mul(a, b))
+    print(div(a, b))
+    print(mod(a, b))
+
+
 num_1 = int(input("Inserisci il primo operando: "))
 num_2 = int(input("Inserisci il secondo operando: "))
-
-print(sum(num_1, num_2))
-print(sub(num_1, num_2))
-print(mul(num_1, num_2))
-print(div(num_1, num_2))
-print(mod(num_1, num_2))
+print_results(num_1, num_2)
