@@ -28,28 +28,34 @@
 
 import random
 
+NUMBER_OF_DICES = 3
+MIN_DICE_VALUE = 1
+MAX_DICE_VALUE = 6
+RED_WIN_MESSAGE = "Red wins!"
+BLUE_WIN_MESSAGE = "Blue wins!"
+
 def attack()->None:
     red_dices = []
     blue_dices = []
     red_points = 0
-    for i in range(3):
-        red_dices.append(random.randint(1, 6))
-        blue_dices.append(random.randint(1, 6))
+    for i in range(NUMBER_OF_DICES):
+        red_dices.append(random.randint(MIN_DICE_VALUE, MAX_DICE_VALUE))
+        blue_dices.append(random.randint(MIN_DICE_VALUE, MAX_DICE_VALUE))
     red_dices.sort(reverse=True)
     blue_dices.sort(reverse=True)
     print("Red dices:")
-    for i in range(3):
+    for i in range(NUMBER_OF_DICES):
         print(red_dices[i])
     print("Blue dices:")
-    for i in range(3):
+    for i in range(NUMBER_OF_DICES):
         print(blue_dices[i])
-    for i in range(3):
+    for i in range(NUMBER_OF_DICES):
         if red_dices[i] > blue_dices[i]:
             red_points += 1
     if red_points >= 2:
-        print("Red wins!")
+        print(RED_WIN_MESSAGE)
     else:
-        print("Blue wins!")
+        print(BLUE_WIN_MESSAGE)
 
 def main():
     attack()
