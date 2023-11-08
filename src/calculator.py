@@ -19,7 +19,11 @@ def div(a: int, b: int) -> float:
 
 
 def mod(a: int, b: int) -> int:
-    return a % b
+    try:
+        result = a % b
+    except ZeroDivisionError:
+        raise ZeroDivisionError("ERRORE!!! divisione per zero non definita (modulo).")
+    return result
 
 
 def print_results(a: int, b: int) -> None:
