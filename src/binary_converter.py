@@ -4,7 +4,8 @@ def BinaryConverter(num : int) -> int:
         BinaryConverter(num // 2)
     print (num % 2, end = '')
 
-x = input("Insert the first number: ")
-print ("The binary number is: ", end='')
-BinaryConverter(int(x))
-print("")
+if __name__ == '__main__':
+    x = input("Insert the number: ")
+    print ("The binary number is: ", end='')
+    BinaryConverter(int(x))
+    print("")
