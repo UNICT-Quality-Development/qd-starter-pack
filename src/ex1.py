@@ -4,4 +4,4 @@ def get_week_day (week: int) -> str:
         return None
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
-    return days[week]
+    return days[week - 1]
