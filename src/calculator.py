@@ -33,6 +33,11 @@ def print_results(a: int, b: int) -> None:
     print(mod(a, b))
 
 
-num_1 = int(input("Inserisci il primo operando: "))
-num_2 = int(input("Inserisci il secondo operando: "))
-print_results(num_1, num_2)
+def main() -> None:
+    num_1 = int(input("Inserisci il primo operando: "))
+    num_2 = int(input("Inserisci il secondo operando: "))
+    print_results(num_1, num_2)
+
+
+if __name__ == "__main__":
+    main()
