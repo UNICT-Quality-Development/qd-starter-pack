@@ -16,9 +16,12 @@ b= int(input ("Enter the second number: "))
 s= sum(a,b)
 df= diff(a,b)
 m= mul(a,b)
-dv= div(a,b)
 
 print (f"The sum is {s} ")
 print (f"The difference is {df} ")
 print (f"The multiplication is {m} ")
-print (f"The division is {dv} ")
+
+if b==0: print("The division is not possible") 
+else: 
+    dv= div(a,b) 
+    print(f"The division is {dv} ")
