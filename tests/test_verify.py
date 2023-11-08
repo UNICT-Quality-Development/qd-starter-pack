@@ -6,10 +6,7 @@
 ##
 success_test_array = [2,4,6,8,10,12,14,16,18,20]
 fail_test_array = range(35,100)
-import sys
-sys.path.append('../src')
-
-import verify
+import src.verify as verify
 
 def test_verify():
     for i in success_test_array:
