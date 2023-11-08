@@ -4,10 +4,10 @@ def genera_array_numeri_random(numero_elementi, valore_minimo, valore_massimo):
     return [random.randint(valore_minimo, valore_massimo) for _ in range(numero_elementi)]
 
 numero_elementi = 10  # Numero di elementi nell'array
-valore_minimo = 1  # Il valore minimo che può essere generato
-valore_massimo = 15  # Il valore massimo che può essere generato
+minimo = 1  # Il valore minimo che può essere generato
+massimo = 15  # Il valore massimo che può essere generato
 
-array_numeri_random = genera_array_numeri_random(numero_elementi, valore_minimo, valore_massimo)
+array_numeri_random = genera_array_numeri_random(numero_elementi, minimo, massimo)
 
 numero_da_cercare = int(input('Inserisci il numero da cercare: '))
 
