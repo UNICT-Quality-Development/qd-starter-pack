@@ -1,5 +1,12 @@
 import random
 
-numero_casuale = random.randint(1, 10)
+def rand()-> int:
+    numero_casuale = random.randint(1, 10)
+    print("Il numero casuale è:", numero_casuale)
+    return numero_casuale
 
-print("Il numero casuale è:", numero_casuale)
+def main():
+    rand()
+
+if __name__ == "__main__":
+    main()
