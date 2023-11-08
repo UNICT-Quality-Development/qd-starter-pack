@@ -30,6 +30,7 @@ def fun_div():
     return src.calculator.div
 
 
+@pytest.fixture
 def fun_mod():
     return src.calculator.mod
 
@@ -121,3 +122,22 @@ def test_division_by_zero(fun_div):
     operand_b = 0
     with pytest.raises(ZeroDivisionError):
         fun_div(operand_a, operand_b)
+
+
+def test_mod_positive_integers(fun_mod):
+    assert fun_mod(10, 3) == 1
+
+
+def test_mod_negative_integers(fun_mod):
+    result = fun_mod(-10, -3)
+    assert result == -1
+
+
+def test_mod_mixed_signs(fun_mod):
+    result = fun_mod(15, -4)
+    assert result == -1
+
+
+def test_mod_zero_divisor(fun_mod):
+    with pytest.raises(ZeroDivisionError):
+        fun_mod(20, 0)
