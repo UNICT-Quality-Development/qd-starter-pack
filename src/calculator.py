@@ -8,24 +8,18 @@
 #Division: 2
 
 def main():
-    a = int(input("Insert first number: "))
-    b = int(input("Insert second number: "))
-    print("SUM: ", sum(a,b))
-    print("Difference: ", difference(a,b))
-    print("Multplication: ", multiplication(a,b))
-    print("Division: ", division(a, b))
+    a = float(input("Insert first number: "))
+    b = float(input("Insert second number: "))
+    print(calculator(a, b))
 
-def sum(a: int, b: int) -> int:
-    return a + b
+def calculator(a: float, b: float) -> list:
+    results = []
+    results.append(f"SUM: {a + b}")
+    results.append(f"Difference: {a - b}")
+    results.append(f"Multiplication: {a * b}")
+    results.append(f"Division: {a / b}")
+    return ', '.join(results)
 
-def difference(a: int, b: int) -> int:
-    return a - b
-
-def multiplication(a: int, b: int) -> int:
-    return a*b
-
-def division(a: int, b: int) -> float:
-    return a/b
 
 if __name__ == "__main__":
     main()
