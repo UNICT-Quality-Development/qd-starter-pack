@@ -4,10 +4,11 @@ def verify(number : int) -> bool:
     if number in array:
         print("Numero presente")
         return True
-    else:
-        print("Numero non presente")
-        return False
+    
+    print("Numero non presente")
+    return False
 
 if __name__ == "__main__":
-    number = int(input("Inserisci numero: "))
-    verify(number)
+    n = int(input("Inserisci numero: "))
+    verify(n)
+
