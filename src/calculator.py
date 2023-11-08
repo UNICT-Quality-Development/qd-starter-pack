@@ -1,6 +1,3 @@
-from math import inf
-
-
 def sum(a: int, b: int) -> int:
     return a + b
 
@@ -16,14 +13,17 @@ def mul(a: int, b: int) -> int:
 def div(a: int, b: int) -> float:
     try:
         result = a / b
-    except ZeroDivisionError as e:
-        print("Errore: divisione per zero non definita.")
-        return None  # Ritorna none per error checking
+    except ZeroDivisionError:
+        raise ZeroDivisionError("ERRORE!!! divisione per zero non definita.")
     return result
 
 
 def mod(a: int, b: int) -> int:
-    return a % b
+    try:
+        result = a % b
+    except ZeroDivisionError:
+        raise ZeroDivisionError("ERRORE!!! divisione per zero non definita (modulo).")
+    return result
 
 
 def print_results(a: int, b: int) -> None:
@@ -34,6 +34,11 @@ def print_results(a: int, b: int) -> None:
     print(mod(a, b))
 
 
-num_1 = int(input("Inserisci il primo operando: "))
-num_2 = int(input("Inserisci il secondo operando: "))
-print_results(num_1, num_2)
+def main() -> None:
+    num_1 = int(input("Inserisci il primo operando: "))
+    num_2 = int(input("Inserisci il secondo operando: "))
+    print_results(num_1, num_2)
+
+
+if __name__ == "__main__":
+    main()
