@@ -12,33 +12,20 @@ def moltiplicazione(a, b):
 
 def divisione(a, b):
     if b == 0:
-        return "Impossibile dividere per zero."
+        raise ValueError("Il denominatore deve essere non nullo")
     return a / b
 
 
-while True:
-    print("Opzioni:")
-    print("Digita 'somma' per sommare due numeri")
-    print("Digita 'sottrazione' per sottrarre due numeri")
-    print("Digita 'moltiplicazione' per moltiplicare due numeri")
-    print("Digita 'divisione' per dividere due numeri")
-    print("Digita 'uscita' per terminare il programma")
 
-    input_utente = input(": ")
 
-    if input_utente == "uscita":
-        break
-    if input_utente in ("somma", "sottrazione", "moltiplicazione", "divisione"):
-        num1 = float(input("Inserisci il primo numero: "))
-        num2 = float(input("Inserisci il secondo numero: "))
+def main():
+    num1 = int(input("Inserisci un numero: "))
+    num2 = int(input("Inserisci un numero: "))
+    print("Risultato: ", somma(num1, num2))
+    print("Risultato: ", sottrazione(num1, num2))
+    print("Risultato: ", moltiplicazione(num1, num2))
+    print("Risultato: ", divisione(num1, num2))
+    print("Opzione non valida")
 
-        if input_utente == "somma":
-            print("Risultato: ", somma(num1, num2))
-        elif input_utente == "sottrazione":
-            print("Risultato: ", sottrazione(num1, num2))
-        elif input_utente == "moltiplicazione":
-            print("Risultato: ", moltiplicazione(num1, num2))
-        elif input_utente == "divisione":
-            print("Risultato: ", divisione(num1, num2))
-    else:
-        print("Opzione non valida")
+if __name__ == "__main__":
+    main()
