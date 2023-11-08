@@ -9,10 +9,23 @@
 #Multiplication: 8
 #Division: 2
 
-x = input("Insert the first number: ")
-y = input("Insert the second number: ")
+def sum(a:int, b:int) -> int:
+    return int(a)+int(b)
 
-print ("Sum: ", int(x)+int(y))
-print ("Difference: ", int(x)-int(y))
-print ("Multiplication: ", int(x)*int(y))
-print ("Division: ", int(x)/int(y))
+def dif(a:int, b:int) -> int:
+    return int(a)-int(b)
+
+def mul(a:int, b:int) -> int:
+    return int(a)*int(b)
+
+def div(a:int, b:int) -> int:
+    return int(a)/int(b)
+
+if __name__ == '__main__':
+    a = input("Insert the first number: ")
+    b = input("Insert the second number: ")
+
+    print ("Sum: ", sum(a, b))
+    print ("Difference: ", dif(a, b))
+    print ("Multiplication: ", mul(a, b))
+    print ("Division: ", div(b, a))
