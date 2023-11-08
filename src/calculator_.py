@@ -10,9 +10,14 @@
   Multiplication: 8
   Division: 2
 """
-x=int(input("Inserisci il primo numero: "))
-y=int(input("inserisci il secondo numero: "))
-
+x=""
+y=""
+while x.isdecimal() is False:
+    x=input("Inserisci il primo numero: ")
+while y.isdecimal() is False:
+    y=input("inserisci il secondo numero: ")
+x=int(x)
+y=int(y)
 print("Somma tra x e y :",x+y)
 print("Differenza tra x e y :",x-y)
 print("Moltiplicazione tra x e y :",x*y)
