@@ -3,10 +3,11 @@
 # Output:
 # The random number is: 4
 
-import random
+from random import randint
 
-# Generate a random number between 1 and 10 (you can adjust the range as needed)
-random_number = random.randint(1, 10)
+MIN_NUMBER = 1
+MAX_NUMBER = 10
 
-# Print the random number
+random_number = randint(MIN_NUMBER, MAX_NUMBER)
+
 print("The random number is:", random_number)
