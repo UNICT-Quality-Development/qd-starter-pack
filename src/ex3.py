@@ -1,20 +1,17 @@
 def func(k:str):
     match k:
         case "BarackObama":
-            print("44th president of the United States")
+            z = "44th president of the United States"
         case "SandroPertini":
-            print("Former President of the Italian Republic")
+            z = "Former President of the Italian Republic"
         case "NelsonMandela":
-            print("Former President of South Africa")
+            z = "Former President of South Africa"
         case "MathmaGandi":
-            print("Bapu")
+            z = "Bapu"
         case "DonaldKnuthu":
-            print("Creator of Latex")
+            z = "Creator of Latex"
         case "DenniesRitchu":
-            print("Creator of C")
+            z = "Creator of C"
         case _:
-            print("Inavlid input")
-
-print("Enter a famous name+surname, ex. BarackObama")
-z = input()
-func(z)
+            z = "Inavlid input"
+    return z
