@@ -4,23 +4,23 @@
 def func(a:int)->int:
     match a:
         case 1:
-            print("Monday")
+            z = "Monday"
         case 2:
-            print("Tuesday")
+            z = "Tuesday"
         case 3:
-            print("Wednesady")
+            z = "Wednesady"
         case 4:
-            print("Thursday")
+            z = "Thursday"
         case 5:
-            print("Friday")
+            z = "Friday"
         case 6:
-            print("Saturday")
+            z = "Saturday"
         case 7:
-            print("Sunday")
+            z = "Sunday"
         case _:
-            print("numero inserito errato")
-        
+            z = "numero inserito errato"
+    
+    return z
 
-print("inserisci numero da 1 a 7:")
-k = int(input())
-func(k)
+
+
