@@ -16,9 +16,8 @@ def mul(a: int, b: int) -> int:
 def div(a: int, b: int) -> float:
     try:
         result = a / b
-    except ZeroDivisionError as e:
-        print("Errore: divisione per zero non definita.")
-        return None  # Ritorna none per error checking
+    except ZeroDivisionError:
+        raise ZeroDivisionError("ERRORE!!! divisione per zero non definita.")
     return result
 
 
