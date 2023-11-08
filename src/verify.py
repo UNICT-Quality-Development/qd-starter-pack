@@ -11,4 +11,3 @@ def is_element_in_list(number : int) -> bool:
 if __name__ == "__main__":
     n = int(input("Inserisci numero: "))
     is_element_in_list(n)
-
