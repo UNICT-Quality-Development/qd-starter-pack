@@ -1,5 +1,7 @@
 def get_week_day (week: int) -> int:
 
+    day = ""
+
     if week == 1:
         day = "Monday"
     elif week == 2:
@@ -14,9 +16,5 @@ def get_week_day (week: int) -> int:
         day = "Saturday"
     elif week == 7:
         day = "Sunday"
-    else:
-        print("Invalid input! Please enter week number between 1-7.")
-    
-    print(day)
 
-    return 0
+    return day
