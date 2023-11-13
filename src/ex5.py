@@ -1,5 +1,5 @@
 from random import random
 
-k = random()
-print("the random number is")
-print(k)
+def ex5()->int:
+    k = random()
+    return k
