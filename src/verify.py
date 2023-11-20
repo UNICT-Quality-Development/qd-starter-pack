@@ -9,7 +9,6 @@ def insert_number()->int:
            k = int(input())
            return k
 
-k = 0
 
 if __name__ == "__main__":
            k = insert_number()
