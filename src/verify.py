@@ -9,7 +9,6 @@ def insert_number()->int:
     k = int(input())
     return k
 
-
 if __name__ == "__main__":
     z = insert_number()
     if f(N,z) is True:
