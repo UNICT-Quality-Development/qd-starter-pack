@@ -5,15 +5,15 @@ def f(A:list,k:int)->bool:
 
 
 def insert_number()->int:
-           print("insert a number")
-           k = int(input())
-           return k
+    print("insert a number")
+    k = int(input())
+    return k
 
 
 if __name__ == "__main__":
-           k = insert_number()
-           if((f(N,k) is True)):
-               print("number is in the list")
-           else:
-               print("number is not in the list")
+   k = insert_number()
+   if(f(N,k) is True):
+      print("number is in the list")
+   else:
+      print("number is not in the list")
 
