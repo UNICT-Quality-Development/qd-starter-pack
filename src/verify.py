@@ -11,9 +11,8 @@ def insert_number()->int:
 
 
 if __name__ == "__main__":
-   k = insert_number()
-   if(f(N,k) is True):
-      print("number is in the list")
-   else:
-      print("number is not in the list")
-
+    z = insert_number()
+    if f(N,z) is True:
+        print("number is in the list")
+    else:
+        print("number is not in the list")
