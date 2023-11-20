@@ -1,11 +1,17 @@
 N = [1,2,3,4,5,6,7,8,9]
 
-def f(A:list)->bool:
-    print("insert a number")
-    k = int(input())
+def f(A:list,k:int)->bool:
     if (k in A):
-        print("number is in the list") 
+        return True
     else:
-         print("number is not in the list")
+        return False
 
-f(N)
+
+print("insert a number")
+k = int(input())
+
+if((f(N,k))==True):
+    print("number is in the list")
+else:
+    print("number is not in the list")
+
