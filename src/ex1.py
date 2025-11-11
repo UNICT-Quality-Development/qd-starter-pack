@@ -13,3 +13,7 @@
 #
 #   return 0;
 # }
+
+week = 0
+
+week=input("Enter week number (1-7): ")
