@@ -42,20 +42,24 @@
 #   return 0;
 # }
 
-textInput = input("Enter a famous name+surname, ex. BarackObama:\n")
+def checkInput(textInput):
+    match textInput:
+        case "BarackObama":
+            print("44th president of the United States")
+        case "SandroPertini":
+            print("Former President of the Italian Republic")
+        case "NelsonMandela":
+            print("Former President of South Africa")
+        case "MahatmaGandhi":
+            print("Bapu")
+        case "DonaldKnuth":
+            print("Creator of LaTeX")
+        case "DennisRitchie":
+            print("Creator of C")
+        case _:
+            print("Invalid input! Please enter a good name!")
 
-match textInput:
-    case "BarackObama":
-        print("44th president of the United States")
-    case "SandroPertini":
-        print("Former President of the Italian Republic")
-    case "NelsonMandela":
-        print("Former President of South Africa")
-    case "MahatmaGandhi":
-        print("Bapu")
-    case "DonaldKnuth":
-        print("Creator of LaTeX")
-    case "DennisRitchie":
-        print("Creator of C")
-    case _:
-        print("Invalid input! Please enter a good name!")
+
+
+textInput = input("Enter a famous name+surname, ex. BarackObama:\n")
+checkInput(textInput)
