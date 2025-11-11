@@ -10,3 +10,8 @@
 #   Multiplication: 8
 #   Division: 2
 #
+
+def sum(x,y): return x + y
+def sum(x,y): return x - y
+def mul(x,y): return x * y
+def div(x,y): return x / y
