@@ -1,0 +1,23 @@
+# Implement this exercise from C++ to Python
+#
+# #include <iostream>
+# using namespace std;
+#
+# int main()
+# {
+#   int week;
+#
+#   /* Input week number from user */
+#   cout << "Enter week number(1-7): " << endl;
+#   cin >> week;
+#
+#   return 0;
+# }
+
+print("Inserisci un numero della settimana (1-7)")
+
+#per acquisire il numero
+week=int(input())
+
+
+
