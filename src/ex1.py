@@ -13,3 +13,17 @@
 #
 #   return 0;
 # }
+
+
+
+
+def main():
+    week = int(input("Enter week number(1-7): "))
+
+
+    return 0
+
+
+
+if __name__ == "__main__":
+    main()
