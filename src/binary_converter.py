@@ -12,7 +12,7 @@ x = input("Insert first number: ")
 try:
     x = int(x)
 except:
-    print("The given value is not a number")
+    print("Error: The given value is not a number")
     exit(1)
 
 print(f"The binary number is: {bin(x)}")
