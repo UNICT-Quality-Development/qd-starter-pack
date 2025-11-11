@@ -49,3 +49,12 @@
 #
 #   return 0;
 # }
+
+week_number = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] 
+
+number = int(input("Enter week number(1-7): "))
+
+if(number>0 and number<8):
+    print(week_number[number-1])
+else:
+    print("Invalid input! Please enter week number between 1-7.")
