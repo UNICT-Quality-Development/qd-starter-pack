@@ -8,11 +8,16 @@
 
 
 def cast(x:int) -> str:
-    if(x // 2 == 0): return ""
+    if  x  == 0 : return ""
     
-    if(x % 2 == 1) : return cast(x // 2) + "1"
+    if x % 2 == 1 :
+        return cast(x // 2) + "1"
+    
+    else:
+        return cast(x // 2) + "0"
 
-    return cast(x // 2) + "0"
 
 x = int(input("Inserisci il numero da convertire: "))
 print(cast(x))
+
+
