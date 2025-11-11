@@ -1,18 +1,18 @@
-#
-# Write a software that verifies if a number is present in a pre-defined array.
-#
-# Output example:
-# Insert number 3
-# The number 3 is [not] present in the array.
-#
-#
-# #include <iostream>
-# using namespace std;
-#
-# int main()
-# {
-#   // placeholder
-#   int N[10] = {3, 4, 5, 1, 2, 3, 4, 9, 13, 0};
-#
-#   return 0;
-# }
+def n_in_array(n: int, array: list[int]) -> bool:
+    return n in array
+
+def insert_integer() -> int:
+    print("insert a number")
+    n_string = input()
+    try:
+        n = int(n_string)
+        return n
+    except ValueError:
+        print("That's not an int!")
+
+pre_def_array = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
+
+n = insert_integer()
+not_string = "not" if not n_in_array(n, pre_def_array) else ""
+print(f"The number {str(n)} is {not_string} present in the array.")
+
