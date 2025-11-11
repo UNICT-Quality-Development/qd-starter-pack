@@ -6,7 +6,7 @@
 # The number 3 is [not] present in the array.
 #
 #
-pre_defined_array = {3, 4, 5, 1, 2, 3, 4, 9, 13, 0}
+pre_defined_array = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
 
 if __name__ == "__main__":
     user_input = int(input("Insert number: "))
