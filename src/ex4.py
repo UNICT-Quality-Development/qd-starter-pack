@@ -54,3 +54,17 @@
 #
 #   return 0;
 # }
+
+def getMonthDays(toFind):
+    monthDays = {
+        (1,3,5,7,8,10,12):31,
+        (4,6,9,11):30,
+        (2,):28
+    }
+    for months, days in monthDays.items():
+        if toFind in months:
+            return days
+    return "Insert valid month"
+
+month = int(input("Enter month number (1-12): "))
+print(getMonthDays(month))
