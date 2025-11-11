@@ -42,8 +42,8 @@
 #   return 0;
 # }
 
-def checkInput(textInput):
-    match textInput:
+def checkInput(text):
+    match text:
         case "BarackObama":
             print("44th president of the United States")
         case "SandroPertini":
