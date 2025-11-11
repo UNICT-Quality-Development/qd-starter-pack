@@ -6,13 +6,12 @@
 # The number 3 is [not] present in the array.
 #
 #
-# #include <iostream>
-# using namespace std;
-#
-# int main()
-# {
-#   // placeholder
-#   int N[10] = {3, 4, 5, 1, 2, 3, 4, 9, 13, 0};
-#
-#   return 0;
-# }
+pre_defined_array = {3, 4, 5, 1, 2, 3, 4, 9, 13, 0}
+
+if __name__ == "__main__":
+    user_input = int(input("Insert number: "))
+
+    if user_input in pre_defined_array:
+        print("The element " + str(user_input) + " is present in the array")
+    else:
+        print("The element " + str(user_input) + " is not present in the array")
