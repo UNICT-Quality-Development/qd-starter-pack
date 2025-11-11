@@ -13,8 +13,13 @@ def cast(x) :
     if (x % 2 == 1) : return cast(x//2) + "1"
     else : return cast(x//2) + "0"
  
-
-x = int(input())
-print(cast(x))
+print("insert a number to cast: ")
+x = float(input())
+if (x<0) :
+    print("1",end = '')
+    x = abs(x) 
+else : print("0",end = '')
+if ((x*10)%10 == 0) : print(cast(x))
+else : print(cast(x)+"."+cast((x*10)%10))
 
 
