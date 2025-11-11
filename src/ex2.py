@@ -50,9 +50,10 @@
 #   return 0;
 # }
 
-week = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
-day = int(input("Enter week number(1-7): "))
-if day in range(1,7):
-    print(week[day-1])
-else:
-    print("Invalid input! Please enter week number between 1-7.")
+def printDay():
+    week = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+    day = int(input("Enter week number(1-7): "))
+    if day in range(1,8):
+        print(week[day-1])
+    else:
+        print("Invalid input! Please enter week number between 1-7.")
