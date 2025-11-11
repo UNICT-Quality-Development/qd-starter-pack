@@ -7,14 +7,14 @@
 #
 #
 
-def verify(num, A):
-    if num in A:
-        print(f"The number {num} is present in the array.")
+def verify(number, array):
+    if number in array:
+        print(f"The number {number} is present in the array.")
     else:
-        print(f"The number {num} is not present in the array.")
+        print(f"The number {number} is not present in the array.")
 
-N = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
+array = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
 
-num = int(input("Insert number "))
+number = int(input("Insert number "))
 
-verify(num, N)
+verify(number, array)
