@@ -4,11 +4,12 @@ def n_in_array(n: int, array: list[int]) -> bool:
 def insert_integer() -> int:
     while True:
         print("insert a number")
-        n_string = input()
-        try:
-            n = int(n_string)
-            return n
-        except ValueError:
+        n_string = input().strip()
+        if not n_string:
+            print("That's not an int!")
+        elif n_string.isdigit() or n_string.startswith('-') and n_string[1:].isdigit():
+            return int(n_string)
+        else:
             print("That's not an int!")
 
 pre_def_array = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
