@@ -17,4 +17,3 @@ pre_def_array = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
 num = insert_integer()
 not_string = " not" if not n_in_array(num, pre_def_array) else ""
 print(f"The number {str(num)} is{not_string} present in the array.")
-
