@@ -54,3 +54,24 @@
 #
 #   return 0;
 # }
+
+month = int(input("Enter month number(1-12): "))
+output = [
+    "31 days",
+    "28/29 days",
+    "31 days",
+    "30 days",
+    "31 days",
+    "30 days",
+    "31 days",
+    "31 days",
+    "30 days",
+    "31 days",
+    "30 days",
+    "31 days",
+]
+
+if 1 <= month <= 12:
+    print(output[month - 1])
+else:
+    print("Invalid input! Please enter month number between 1-12")
