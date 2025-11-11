@@ -18,11 +18,14 @@ print("Insert second number:")
 n2 = input()
 
 def func(n1,n2):
+    n11 = int(n1)
+    n22 = int(n2)
+
     risultati = []
-    risultati.append(int(n1)+int(n2))
-    risultati.append(int(n1)-int(n2))
-    risultati.append(int(n1)*int(n2))
-    risultati.append(int(n1)/int(n2))
+    risultati.append(n11+n22)
+    risultati.append(n11-n22)
+    risultati.append(n11*n22)
+    risultati.append(n11/n22)
 
     return risultati
 
