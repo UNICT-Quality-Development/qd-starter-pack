@@ -49,3 +49,20 @@
 #
 #   return 0;
 # }
+
+
+arr = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","Sunday"]
+
+week = input("Enter week number(1-7): ")
+
+try:
+    week = int(week)-1
+except:
+    print("The given value is not a number")
+    exit(1)
+
+if week < 0 or week > 7:
+    print("Invalid input! Please enter week number between 1-7.")
+    exit(1)
+
+print(arr[week])
