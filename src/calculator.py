@@ -14,12 +14,10 @@ def div(a: int, b: int) -> float | str:
     return "You can't divide by 0" if b == 0 else a / b
 
 
-print("Inserisci la x: ")
-x = int(input())
-print("Inserisci la y: ")
-y = int(input())
+x = int(input("Inserisci la x: "))
+y = int(input("Inserisci la y: "))
 
-print(f"sum of {x} and {y} = {add(x, y)}")
-print(f"subtraction of {x} and {y} = {sub(x, y)}")
-print(f"multiplication of {x} and {y} = {mul(x, y)}")
-print(f"division of {x} and {y} = {div(x, y)}")
+print(f"Sum of {x} and {y} = {add(x, y)}")
+print(f"Subtraction of {x} and {y} = {sub(x, y)}")
+print(f"Multiplication of {x} and {y} = {mul(x, y)}")
+print(f"Division of {x} and {y} = {div(x, y)}")
