@@ -16,3 +16,20 @@
 #
 #   return 0;
 # }
+
+num = input("Insert number ")
+
+try:
+    num = int(num)
+except:
+    print("Error: The given value is not a number")
+    exit(1)
+
+N = [3,4,5,1,2,3,4,9,13,0] # placeholder
+
+if (N.count(num)):
+    print(f"The number {num} is present in the array")
+else:
+    print(f"The number {num} is [not] present in the array")
+
+
