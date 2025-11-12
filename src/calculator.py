@@ -14,8 +14,8 @@ def div(a: int, b: int) -> float | str:
     return "You can't divide by 0" if b == 0 else a / b
 
 
-x = int(input("Inserisci la x: "))
-y = int(input("Inserisci la y: "))
+x = int(input("Insert first number: "))
+y = int(input("Insert second number: "))
 
 print(f"Sum of {x} and {y} = {add(x, y)}")
 print(f"Subtraction of {x} and {y} = {sub(x, y)}")
