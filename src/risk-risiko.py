@@ -27,3 +27,20 @@
 #   M 3 vs 3 => blue win
 #   O 2 vs 1 => red win
 #
+import random
+
+P1 = [random.randrange(1,7),random.randrange(1,7),random.randrange(1,7)]
+P2 = [random.randrange(1,7),random.randrange(1,7),random.randrange(1,7)]
+
+P1.sort(reverse=True)
+P2.sort(reverse=True)
+
+print("   R    B")
+arr = ['N','M','O']
+for i in range(3):
+    if P1[i] > P2[i]:
+        temp = "red win"
+    else:
+        temp = "blue win"
+    print(f"{arr[i]} {P1[i]} vs {P2[i]} => {temp}")
+
