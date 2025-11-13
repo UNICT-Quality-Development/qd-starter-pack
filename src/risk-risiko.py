@@ -30,17 +30,17 @@
 import random
 red_lost = 0
 blue_lost = 0
-red_dices = [random.randint(1,6),random.randint(1,6),random.randint(1,6)]
+red_dices = [random.randint(1,6) , random.randint(1,6) , random.randint(1,6)]
 red_dices.sort(reverse=True)
-blue_dices = [random.randint(1,6),random.randint(1,6),random.randint(1,6)]
+blue_dices = [random.randint(1,6) , random.randint(1,6) , random.randint(1,6)]
 blue_dices.sort(reverse=True)
-print("Risultati dadi attacco:",red_dices)
-print("Risultati dadi difesa:",blue_dices)
+print("Risultati dadi attacco:" , red_dices)
+print("Risultati dadi difesa:" , blue_dices)
 for i in range(3):
-    if (blue_dices[i]>=red_dices[i]):
-        print(red_dices[i],"vs",blue_dices[i],": vince la difesa")
-        red_lost+=1
+    if blue_dices[i] >= red_dices[i]:
+        print(red_dices[i] , "vs" , blue_dices[i] , ": vince la difesa")
+        red_lost += 1
     else:
-        print(red_dices[i],"vs",blue_dices[i],": vince l'attacco")
-        blue_lost+=1
-print("perdite:",red_lost,"unità perse dall'attaccante,",blue_lost,"unità perse dalla difesa")
+        print(red_dices[i] , "vs" , blue_dices[i] , ": vince l'attacco")
+        blue_lost += 1
+print("perdite:" , red_lost , "unità perse dall'attaccante," , blue_lost , "unità perse dalla difesa")
