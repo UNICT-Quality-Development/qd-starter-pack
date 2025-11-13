@@ -51,25 +51,31 @@
 def main():
     #Input week number from user
     print("Enter week number(1-7): ")
-    week = int(input())
 
-    if week == 1:
-        print("Monday")
-    elif week == 2:
-        print("Tuesday")
-    elif week == 3:
-        print("Wednesday")
-    elif week == 4:
-        print("Thursday")
-    elif week == 5:
-        print("Friday")
-    elif week == 6:
-        print("Saturday")
-    elif week == 7:
-        print("Sunday")
-    else:
-        print("Invalid input! Please enter week number between 1-7.")
+    try:
+
+        week = int(input())
+
+        if week == 1:
+            print("Monday")
+        elif week == 2:
+            print("Tuesday")
+        elif week == 3:
+            print("Wednesday")
+        elif week == 4:
+            print("Thursday")
+        elif week == 5:
+            print("Friday")
+        elif week == 6:
+            print("Saturday")
+        elif week == 7:
+            print("Sunday")
+        else:
+            print("Invalid input! Please enter week number between 1-7.")
+
+    except ValueError:
+        print("Invalid input type, you have to put a number(1-7).")
     
-    return 0
 
-main()
+if __name__ == "__main__":
+    main()
