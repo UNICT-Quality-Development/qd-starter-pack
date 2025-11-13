@@ -27,10 +27,10 @@ def division(a,b):
     return a/b
 
 
-a= int(input("Inserisci il primo numero\n"))
-b= int(input("Inserisci il secondo numero\n"))
+a_= int(input("Inserisci il primo numero\n"))
+b_= int(input("Inserisci il secondo numero\n"))
 
-print("Somma-> ", sum(a,b),"\n")
-print("Sottrazione-> ", difference(a,b),"\n")
-print("Moltiplicazione-> ", multiplication(a,b),"\n")
-print("Divisione-> ", division(a,b),"\n")
+print("Somma-> ", sum(a_,b_),"\n")
+print("Sottrazione-> ", difference(a_,b_),"\n")
+print("Moltiplicazione-> ", multiplication(a_,b_),"\n")
+print("Divisione-> ", division(a_,b_),"\n")
