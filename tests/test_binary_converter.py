@@ -8,5 +8,5 @@ def test_decimal2binary() -> None:
     try:
         decimal2binary(-5)
         assert False
-    except ValueError as e:
+    except ValueError as _:
         assert True
