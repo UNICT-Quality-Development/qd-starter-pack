@@ -1,4 +1,4 @@
-from src.calculator import add, sub, mul, div
+from src.calculator import add, div, mul, sub
 
 
 def test_add() -> None:
