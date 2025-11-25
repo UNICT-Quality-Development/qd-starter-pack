@@ -52,18 +52,24 @@
 
 
 def week_number():
-    '''
+    """
     Returns the day of the week
-    '''
+    """
     number = int(input("Enter week number(1-7): "))
-    week_day = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] 
+    week_day = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+    ]
 
-    if(number>0 and number<8):
-        return week_day[number-1]
-    else:
-        return ''
+    if number > 0 and number < 8:
+        return week_day[number - 1]
+    return ''
 
-    
 
 if __name__ == "__main__":
     res = week_number()
