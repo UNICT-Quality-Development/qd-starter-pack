@@ -14,7 +14,7 @@ def search_value(value:int):
     if value in pre_defined_array:
         print("The element " + str(value) + " is present in the array")
         return True
-    
+
     print("The element " + str(value) + " is not present in the array")
     return False
 

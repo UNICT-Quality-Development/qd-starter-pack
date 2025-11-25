@@ -6,13 +6,13 @@ from pytest_mock import MockerFixture
 MOCKED_INTEGER_INPUT = 123
 
 def test_search_value() -> None:
-    assert search_value(3) == True
-    assert search_value(10) == False
-    
+    assert search_value(3) is True
+    assert search_value(10) is False
+
 def test_user_insert(mocker: MockerFixture) -> None:
-    
+
     mock_random_return = 43
-    
+
     mocker.patch.object(verify, "input", return_value=mock_random_return)
     spy = mocker.spy(verify, "input")
 
