@@ -6,11 +6,8 @@
 # The number 3 is [not] present in the array.
 #
 #
-pre_defined_array = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
-
 def user_insert(mess:str):
     return int(input(mess))
-    
 
 def search_value(value:int):
     if value in pre_defined_array:
