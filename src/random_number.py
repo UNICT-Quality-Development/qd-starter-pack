@@ -8,9 +8,31 @@ import random
 import sys
 
 
-def random_number() -> int:
+def random_positive_int() -> int:
     return random.randint(0, sys.maxsize)
 
 
+# maybe limited_random... is a better name?
+def random_limited_positive_int(upper_limit):
+    try:
+        assert isinstance(upper_limit, int)
+    except:
+        # for testing
+        # TODO: handle the exception gracefully
+        raise Exception("use integers only")
+    try:
+        assert upper_limit > 0 and upper_limit <= sys.maxsize
+    except:
+        # for testing
+        # TODO: handle the exception gracefully
+        raise Exception("Sorry, no numbers below or equal to zero")
+    return random.randint(0, upper_limit)
+
+
+def main():
+    print(random_positive_int())
+    print(random_limited_positive_int(5))
+
+
 if __name__ == "__main__":
-    print(random_number())
+    main()
