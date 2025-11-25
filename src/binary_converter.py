@@ -10,6 +10,8 @@
 def decimal2binary(n: int) -> str:
     if n < 0:
         raise ValueError("Error - n must be greater than 0")
+    if n == 0:
+        return "0"
     res = ""
     while n > 0:
         bit = n & 1
