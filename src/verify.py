@@ -8,10 +8,18 @@
 #
 pre_defined_array = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
 
-if __name__ == "__main__":
-    user_input = int(input("Insert number: "))
+def user_insert(mess:str):
+    return int(input(mess))
+    
 
-    if user_input in pre_defined_array:
-        print("The element " + str(user_input) + " is present in the array")
-    else:
-        print("The element " + str(user_input) + " is not present in the array")
+def search_value(value:int):
+    if value in pre_defined_array:
+        print("The element " + str(value) + " is present in the array")
+        return True
+    
+    print("The element " + str(value) + " is not present in the array")
+    return False
+
+if __name__ == "__main__":
+    user_input = user_insert("Inserisci: ")
+    search_value(user_input)
