@@ -1,5 +1,6 @@
 from src.calculator import operation, OperationType
 
+
 def test_calculator_operations() -> None:
     assert operation(4, 2, op=OperationType.SUM) == 6  # SUM
     assert operation(4, 2, op=OperationType.DIFFERENCE) == 2  # DIFFERENCE
