@@ -1,7 +1,7 @@
-from src.calculator import sum, div, mult, diff
+from src.calculator import div, diff, mult, sum
 
 
-def test_add() -> None:
+def test_sum() -> None:
     assert sum(6, 4) == 10
 
 

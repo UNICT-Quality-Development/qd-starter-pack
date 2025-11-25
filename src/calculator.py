@@ -13,14 +13,13 @@ def mult(x: float, y: float) -> float:
 def div(x: float, y: float) -> float | str:
     if y != 0:
         return x / y
-    else:
-        return "Cannot divide by 0"
+    return "Cannot divide by 0"
 
 
 if __name__ == "__main__":
-    x: float = float(input("Enter a number "))
-    y: float = float(input("Enter another number "))
-    print(sum(x, y))
-    print(diff(x, y))
-    print(mult(x, y))
-    print(div(x, y))
+    a = float(input("Enter a number "))
+    b = float(input("Enter another number "))
+    print(sum(a, b))
+    print(diff(a, b))
+    print(mult(a, b))
+    print(div(a, b))
