@@ -9,7 +9,6 @@
 
 def cast(x) :
     if (x == 0): return ""
-
     if (x % 2 == 1) : return cast(x//2) + "1"
     else : return cast(x//2) + "0"
  
