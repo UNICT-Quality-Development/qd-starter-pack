@@ -18,34 +18,34 @@ class OperationType(enum.Enum):
     MULTIPLICATION = 3
     DIVISION = 4
 
-def sum(a, b):
+def sum(a: int | float, b: int | float) -> int | float:
     return a + b
 
-def difference(a, b):
+def difference(a: int | float, b: int | float) -> int | float:
     return a - b
 
-def multiplication(a, b):
+def multiplication(a: int | float, b: int | float) -> int | float:
     return a * b
 
-def division(a, b):
+def division(a: int | float, b: int | float) -> int | float:
     if b != 0:
         return a / b
     else:
         raise ValueError("Error: Division by zero")
     
-def operation(a, b, op: OperationType):
+def operation(a: int | float, b: int | float, op: OperationType) -> int | float:
     if op == OperationType.SUM:
         return sum(a, b)
-    elif op == OperationType.DIFFERENCE:
+    if op == OperationType.DIFFERENCE:
         return difference(a, b)
-    elif op == OperationType.MULTIPLICATION:
+    if op == OperationType.MULTIPLICATION:
         return multiplication(a, b)
-    elif op == OperationType.DIVISION:
+    if op == OperationType.DIVISION:
         return division(a, b)
-    else:
-        raise ValueError("Invalid operation")
     
-if __name__ == "__main__":
+    raise ValueError("Invalid operation")
+    
+if __name__ == "__main__": # pragma: no cover
     num1 = float(input("Insert first number: "))
     num2 = float(input("Insert second number: "))
     
