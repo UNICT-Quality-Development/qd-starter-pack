@@ -6,7 +6,6 @@
 #   The binary number is: 1000
 #
 
-#  Write a function that given a number as input convert it in binary. dont use bin() function
 def binary_converter(number: int) -> str:
     if number == 0:
         return "0"
