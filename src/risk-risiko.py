@@ -48,7 +48,9 @@ def check_attack(red, blue):
 if __name__ == "__main__":
     red_dices = random_dices_value()
     blue_dices = random_dices_value()
+    
     print("Red Dices: " + str(red_dices))
     print("Blue DIces: " + str(blue_dices))
+    
     check_attack(red_dices, blue_dices)
     
