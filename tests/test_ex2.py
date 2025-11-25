@@ -1,28 +1,28 @@
 from pytest_mock import MockerFixture
+import pytest
+from typing import List
 from src import ex2
 
-def test_week_number_1(mocker: MockerFixture) -> None:
+tests: List[dict] = [
+    { "mock_value": '1', "mock_function": "input", "res": ex2.week_number, "expected_res": 'Monday' },
+    { "mock_value": '2', "mock_function": "input", "res": ex2.week_number, "expected_res": 'Tuesday' },
+    { "mock_value": '3', "mock_function": "input", "res": ex2.week_number, "expected_res": 'Wednesday' },
+    { "mock_value": '4', "mock_function": "input", "res": ex2.week_number, "expected_res": 'Thursday' },
+    { "mock_value": '5', "mock_function": "input", "res": ex2.week_number, "expected_res": 'Friday' },
+    { "mock_value": '6', "mock_function": "input", "res": ex2.week_number, "expected_res": 'Saturday' },
+    { "mock_value": '7', "mock_function": "input", "res": ex2.week_number, "expected_res": 'Sunday' },
+    { "mock_value": '9', "mock_function": "input", "res": ex2.week_number, "expected_res": '' }
+]
+
+@pytest.mark.parametrize("test", tests)
+def test_week_number(mocker: MockerFixture, test: dict) -> None:
 
     #arrange 
-    mock_number_return = '1'
-    mocker.patch.object(ex2, "input", return_value=mock_number_return)
+    mocker.patch.object(ex2, test['mock_function'], return_value=test["mock_value"])
 
     #act
-    res = ex2.week_number()
+    res = test["res"]()
 
     #assert
-    assert res == 'Monday'
-    assert type(res) is str
-
-def test_week_number_2(mocker: MockerFixture) -> None:
-
-    #arrange 
-    mock_number_return = '9'
-    mocker.patch.object(ex2, "input", return_value=mock_number_return)
-
-    #act
-    res = ex2.week_number()
-
-    #assert
-    assert res == ''
+    assert res == test["expected_res"]
     assert type(res) is str
