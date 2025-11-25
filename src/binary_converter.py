@@ -6,7 +6,8 @@
 #   The binary number is: 1000
 #
 
-def decimal2binary(n:int) -> str:
+
+def decimal2binary(n: int) -> str:
     if n < 0:
         raise ValueError("Error - n must be greater than 0")
     res = ""
@@ -17,5 +18,5 @@ def decimal2binary(n:int) -> str:
     return res
 
 
-if __name__ == "__main__": # pragma: no cover
+if __name__ == "__main__":  # pragma: no cover
     print(decimal2binary(675))

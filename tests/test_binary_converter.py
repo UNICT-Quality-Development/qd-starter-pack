@@ -1,5 +1,6 @@
 from src.binary_converter import decimal2binary
 
+
 def test_decimal2binary() -> None:
     assert decimal2binary(8) == "1000"
     assert decimal2binary(10) == "1010"
