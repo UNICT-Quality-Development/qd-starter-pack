@@ -17,12 +17,10 @@ def random_limited_positive_int(upper_limit):
     try:
         assert isinstance(upper_limit, int)
     except:
-        # TODO: handle the exception gracefully
-        raise Exception("use integers only")
+       raise Exception("use integers only")
     try:
         assert upper_limit > 0 and upper_limit <= sys.maxsize
     except:
-        # TODO: handle the exception gracefully
         raise Exception("Sorry, no numbers below or equal to zero")
     return random.randint(0, upper_limit)
 
