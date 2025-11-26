@@ -78,13 +78,17 @@ If you want to work on another `ex1.py`, go to step 2️⃣.
 
 Use git wisely.
 
-<!-- ### Software Testing
+### Software Testing
 
 How to run properly the tests with the related html report:
 
 ```bash
 $ pytest --cov src tests/ --cov-report=html
-``` -->
+
+# or
+
+$ pytest .
+```
 
 ### Clean code
 
