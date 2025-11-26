@@ -17,6 +17,4 @@ def test_random_limited(upper_limit):
         assert random_limited_int >= 0 and random_limited_int <= upper_limit
 
     except Exception:
-        # print(Exception)
         assert True
-        return
