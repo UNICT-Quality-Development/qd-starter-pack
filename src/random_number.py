@@ -17,7 +17,7 @@ def random_limited_positive_int(upper_limit):
     try:
         assert isinstance(upper_limit, int)
     except:
-       raise Exception("use integers only")
+        raise Exception("use integers only")
     try:
         assert upper_limit > 0 and upper_limit <= sys.maxsize
     except:
@@ -27,7 +27,19 @@ def random_limited_positive_int(upper_limit):
 
 def main():
     print(random_positive_int())
-    print(random_limited_positive_int(5))
+
+    user_input = None
+    while user_input is None:
+        try:
+            user_input = int(
+                input(
+                    "Inserisci un limite superiore INTERO e POSITIVO per il range di generazione: "
+                )
+            )
+            print(random_limited_positive_int(user_input))
+        except:
+            print("Errore: tipo o valore del limite superiore non validi")
+            user_input = None
 
 
 if __name__ == "__main__":
