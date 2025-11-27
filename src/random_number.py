@@ -14,14 +14,11 @@ def random_positive_int() -> int:
 
 # maybe limited_random... is a better name?
 def random_limited_positive_int(upper_limit):
-    try:
-        assert isinstance(upper_limit, int)
-    except:
-        raise Exception("use integers only")
+    assert isinstance(upper_limit, int)
     try:
         assert upper_limit > 0 and upper_limit <= sys.maxsize
-    except:
-        raise Exception("Sorry, no numbers below or equal to zero")
+    except AssertionError as e:
+        raise ValueError('input a positive non-zero number') from e
     return random.randint(0, upper_limit)
 
 
@@ -38,10 +35,10 @@ def main():
             )
             print(random_limited_positive_int(user_input))
         except KeyboardInterrupt:
-            print(' ')
+            print(" ")
             sys.exit(1)
-        except:
-            print("Errore: tipo o valore del limite superiore non validi")
+        except Exception as e:
+            print(e)
             user_input = None
 
 
