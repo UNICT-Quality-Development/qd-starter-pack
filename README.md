@@ -2,8 +2,6 @@
 
 This repository has been created to give a python template project which includes pytest instructions.
 
-<!-- my example -->
-
 ### 1️⃣ How to start (one-time step)
 
 Fork this repository and clone your fork into your machine using:
