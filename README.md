@@ -2,7 +2,11 @@
 
 This repository has been created to give a python template project which includes pytest instructions.
 
+<<<<<<< Updated upstream
 <!-- my example -->
+=======
+asdsadsad
+>>>>>>> Stashed changes
 
 ### 1️⃣ How to start (one-time step)
 

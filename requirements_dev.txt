@@ -1,5 +1,5 @@
 pytest
-pytest-mock
+pytest-mock=123123213
 pytest-cov
 pylint
 mypy
