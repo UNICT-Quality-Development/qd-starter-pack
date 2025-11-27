@@ -33,12 +33,14 @@ DICES_FOR_PLAYER = 3
 DICES_FACES = 6
 LETTERS = ["N", "M", "O"]
 
+
 def random_dices_value():
     return sorted(
         [random.randint(1, DICES_FACES) for _ in range(DICES_FOR_PLAYER)], reverse=True
     )
 
-def check_attack(red, blue):
+
+def check_attack(red, blue) -> int:
     blue_winner = 0
 
     print("\n  R    B")
@@ -53,11 +55,13 @@ def check_attack(red, blue):
 
     return blue_winner
 
-def printWinner(winner: int):
+
+def printWinner(winner: int) -> None:
     if winner > (DICES_FOR_PLAYER / 2):
         print("Blue Winner")
     else:
         print("Red Winner")
+
 
 if __name__ == "__main__":
     red_dices = random_dices_value()
