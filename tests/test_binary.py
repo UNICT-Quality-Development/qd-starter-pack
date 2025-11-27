@@ -12,6 +12,7 @@ def test_WDPG() :
 
 def test_checkValue() :
     assert binary_converter.checkValue("hello") == None
+    assert binary_converter.checkValue("1.2") == 1.2
 
 def test_main(mocker) :
     mocker.patch('builtins.input', return_value = '4')
