@@ -5,9 +5,11 @@ from pytest_mock import MockerFixture
 
 MOCKED_INTEGER_INPUT = 123
 
+
 def test_search_value() -> None:
-    assert search_value(3) is True
+    assert search_value(3)
     assert search_value(10) is False
+
 
 def test_user_insert(mocker: MockerFixture) -> None:
 
