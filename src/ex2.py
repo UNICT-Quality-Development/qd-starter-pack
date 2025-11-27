@@ -1,21 +1,31 @@
 """Scrivere in python un esercizio che prenda un numero da 1 a 7 e restituisca il giorno della settimana corrispondente.
 Utilizzare un array per memorizzare i nomi dei giorni della settimana invece di utilizzare una serie di istruzioni if/else if.
+
 """
 
-# Giorni della settimana memorizzati in un array
-giorni_settimana = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-]
-# Input dell'utente
-numero_settimana = int(input("Enter week number (1-7): "))
-# Verifica se l'input è valido e stampa il giorno corrispondente
-if 1 <= numero_settimana <= 7:
-    print(giorni_settimana[numero_settimana - 1])  # Sottrai 1 per l'indice dell'array
-else:
-    print("Invalid input! Please enter week number between 1-7.")
+
+def giorno_della_settimana(n: int) -> str:
+
+    match n:
+        case 1:
+            return "Lunedì"
+        case 2:
+            return "Martedì"
+        case 3:
+            return "Mercoledì"
+        case 4:
+            return "Giovedì"
+        case 5:
+            return "Venerdì"
+        case 6:
+            return "Sabato"
+        case 7:
+            return "Domenica"
+        case _:
+            return "--"
+
+
+if __name__ == "__main__":
+
+    s = input("Scegli un giorno della settimana: ")
+    print("Il girono della settimana scelto: è ", giorno_della_settimana(int(s)))
