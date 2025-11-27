@@ -18,7 +18,7 @@ def random_limited_positive_int(upper_limit):
     try:
         assert upper_limit > 0 and upper_limit <= sys.maxsize
     except AssertionError as e:
-        raise ValueError('input a positive non-zero number') from e
+        raise ValueError("input a positive non-zero number") from e
     return random.randint(0, upper_limit)
 
 
