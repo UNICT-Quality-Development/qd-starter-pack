@@ -37,6 +37,9 @@ def main():
                 )
             )
             print(random_limited_positive_int(user_input))
+        except KeyboardInterrupt:
+            print(' ')
+            sys.exit(1)
         except:
             print("Errore: tipo o valore del limite superiore non validi")
             user_input = None
