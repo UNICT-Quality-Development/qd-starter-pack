@@ -14,6 +14,7 @@ def random_positive_int() -> int:
 
 # maybe limited_random... is a better name?
 def random_limited_positive_int(upper_limit):
+    #raises a ValueError on failure
     assert isinstance(upper_limit, int)
     try:
         assert upper_limit > 0 and upper_limit <= sys.maxsize
