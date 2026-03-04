@@ -42,7 +42,6 @@
 #   return 0;
 # }
 
-
 textInput = input("Enter a famous name+surname, ex. BarackObama: ")
 
 match textInput:
@@ -60,4 +59,3 @@ match textInput:
         print("Creator of C")
     case _:
         print("Invalid input! Please enter a good name!")
-
