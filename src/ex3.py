@@ -41,3 +41,23 @@
 #
 #   return 0;
 # }
+
+
+def descriptor():
+    text_input = input("Enter a famous name+surname, ex. BarackObama ")
+
+    namesDesc = {
+        "BarackObama" : "44th president of the United States",
+        "SandroPertini" : "Former President of the Italian Republic",
+        "NelsonMandela" : "Former President of South Africa",
+        "MahatmaGandhi" : "Bapu",
+        "DonaldKnuth" : " Creator of LaTeX",
+        "DennisRitchie" : "Creator of C"
+    }
+
+    try:
+        print(namesDesc[text_input])
+    except:
+        print("Invalid input! Please enter a good name!")
+
+descriptor()
