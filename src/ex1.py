@@ -47,3 +47,30 @@
 #
 #   return 0;
 # }
+
+
+
+def main():
+    
+    week = int(input("Enter week number(1-7): ")) #casting int/input
+    
+    if week == 1:
+        print("Monday")
+    elif week == 2:
+        print("Tuesday")
+    elif week == 3:
+        print("Wedsnesday")
+    elif week == 4:
+        print("thrusday")
+    elif week == 5:
+        print("Friday")
+    elif week == 6:
+        print("Saturday")
+    elif week == 7:
+        print("Sunday")
+    else:
+        print("Invalid input! Please enter week number between 1-7.")
+
+
+if __name__ == "__main__":
+    main()
