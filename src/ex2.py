@@ -49,3 +49,26 @@
 #
 #   return 0;
 # }
+
+weekdays = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+]
+
+
+def main():
+    week = int(input("Enter week number(1-7): "))
+
+    if 1 <= week <= 7:
+        print(weekdays[week - 1])
+    else:
+        print("Invalid input! Please enter week number between 1-7.")
+
+
+if __name__ == "__main__":
+    main()
