@@ -49,3 +49,24 @@
 #
 #   return 0;
 # }
+def ex2():
+    week = int(input("Enter week number(1-7):\n"))
+    match week:
+        case 1:
+            print("Monday\n")
+        case 2:
+            print("Tuesdey\n")
+        case 3:
+            print("Wednesday\n")
+        case 4:
+            print("Thursday\n")
+        case 5:
+            print("Friday\n")
+        case 6:
+            print("Saturday\n")
+        case 7:
+            print("Sunday\n")
+        case _:
+            print("Invalid week number\n")
+
+ex2()
