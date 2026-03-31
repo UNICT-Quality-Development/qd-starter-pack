@@ -4,3 +4,7 @@
 #   Output:
 #   The random number is: 4
 #
+
+import random
+
+print(f"The random number is: {random.randint(1, 9999)}")
