@@ -49,3 +49,11 @@
 #
 #   return 0;
 # }
+
+weekday = ["Monday","Tuesday","Wednesday", "Thursday","Friday","Saturday","Sunday"]
+
+day = int(input("Enter week number (1-7): "))
+
+while day not in range(1,len(weekday)+1):
+    day = int(input("You didn't enter a valid number!\nValid numbers: 1 to 7\n"))
+print(weekday[day - 1])
