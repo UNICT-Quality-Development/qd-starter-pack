@@ -54,3 +54,14 @@
 #
 #   return 0;
 # }
+# Mese -> numero di giorni
+giorni_del_mese = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+try:
+    mese = int(input("Inserisci il numero del mese (1-12): "))
+    if 1 <= mese <= 12:
+        print(f"Il mese {mese} ha {giorni_del_mese[mese - 1]} giorni.")
+    else:
+        print("Input non valido! Inserisci un numero tra 1 e 12.")
+except ValueError:
+    print("Input non valido! Inserisci un numero intero valido.")
