@@ -41,3 +41,28 @@
 #
 #   return 0;
 # }
+
+people = ["BarackObama","SandroPertini","NelsonMandela","MahatmaGandhi","DonaldKnuth","DennisRitchie"]
+
+name_surname=input("Enter a famous name+surname, ex. BarackObama \n")
+match(name_surname):
+    case x if x==people[0]:
+        print("44th president of the United States\n")
+
+    case x if x==people[1]:
+        print("Former President of the Italian Republic")
+
+    case x if x==people[2]:
+        print("Former President of South Africa")
+
+    case x if x==people[3]:
+        print("Bapu\n")
+
+    case x if x==people[4]:
+        print("Creator of LaTeX\n")
+
+    case x if x==people[5]:
+        print("Creator of C\n")
+
+    case x if x not in people:
+        print("Invalid input! Please enter a good name!\n")
