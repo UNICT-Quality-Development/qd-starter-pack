@@ -5,14 +5,22 @@
 # Insert number 3
 # The number 3 is [not] present in the array.
 #
-#
-# #include <iostream>
-# using namespace std;
-#
-# int main()
-# {
-#   // placeholder
-#   int N[10] = {3, 4, 5, 1, 2, 3, 4, 9, 13, 0};
-#
-#   return 0;
-# }
+pre_defined_array = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
+
+
+def user_insert(mess: str) -> int:
+    return int(input(mess))
+
+
+def search_value(value: int) -> bool:
+    if value in pre_defined_array:
+        print("The element " + str(value) + " is present in the array")
+        return True
+
+    print("The element " + str(value) + " is not present in the array")
+    return False
+
+
+if __name__ == "__main__":
+    user_input = user_insert("Inserisci: ")
+    search_value(user_input)
