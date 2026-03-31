@@ -47,3 +47,17 @@
 #
 #   return 0;
 # }
+
+
+indexDay = int(input("Enter week number(1-7):"));
+def getDay(indexDay): return {
+  0: "Monday",
+  1: "Tuesday",
+  2: "Wednesday",
+  3: "Thursday",
+  4: "Friday",
+  5: "Saturday",
+  6: "Sunday"
+}.get(indexDay, "Errore")
+
+print(getDay(indexDay))
