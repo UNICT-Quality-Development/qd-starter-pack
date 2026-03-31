@@ -47,3 +47,24 @@
 #
 #   return 0;
 # }
+
+def checkDay(toCheck):
+    if toCheck == 1:
+        print("Monday")
+    elif toCheck == 2:
+        print("Tuesday")
+    elif toCheck == 3:
+        print("Wednesday")
+    elif toCheck == 4:
+        print("Thursday")
+    elif toCheck == 5:
+        print("Friday")
+    elif toCheck == 6:
+        print("Saturday")
+    elif toCheck == 7:
+        print("Sunday")
+    else:
+        print("Invalid input! Please enter day number between 1-7.")
+
+day = int(input("Enter day number(1-7): "))
+checkDay(day)
