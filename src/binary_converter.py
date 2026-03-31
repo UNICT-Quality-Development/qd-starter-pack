@@ -5,3 +5,8 @@
 #   Insert first number: 8
 #   The binary number is: 1000
 #
+
+def to_bin(num):
+    return bin(num)
+
+print(to_bin(3))
