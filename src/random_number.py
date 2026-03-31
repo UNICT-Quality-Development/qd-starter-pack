@@ -4,3 +4,9 @@
 #   Output:
 #   The random number is: 4
 #
+import random
+
+x = random.randrange(0, 100)
+
+print("The random number is : ", x)
+

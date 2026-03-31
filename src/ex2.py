@@ -49,3 +49,12 @@
 #
 #   return 0;
 # }
+
+i = int(input("Enter Week number(1-7) : "))
+if i < 1 or i > 7 :
+    exit("Input out of range")
+
+arr =["Monday", "Tuesday", "Wednesday" ,"Thursday", "Friday", "Saturday", "Sunday"]
+
+print(arr[i - 1])
+
