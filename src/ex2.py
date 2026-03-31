@@ -1,51 +1,31 @@
-#
-#  Implement the following code in Python replacing if/else if with an array.
-#
-#  Hint:  arr[3] = "Thursday";
-#
+"""Scrivere in python un esercizio che prenda un numero da 1 a 7 e restituisca il giorno della settimana corrispondente.
+Utilizzare un array per memorizzare i nomi dei giorni della settimana invece di utilizzare una serie di istruzioni if/else if.
 
-# #include <iostream>
-# using namespace std;
-#
-# int main()
-# {
-#   int week;
-#
-#   cout << "Enter week number(1-7): " << endl;
-#   cin >> week;
-#
-#   if (week == 1)
-#   {
-#     cout << "Monday" << endl;
-#   }
-#   else if (week == 2)
-#   {
-#     cout << "Tuesday" << endl;
-#   }
-#   else if (week == 3)
-#   {
-#     cout << "Wednesday" << endl;
-#   }
-#   else if (week == 4)
-#   {
-#     cout << "Thursday" << endl;
-#   }
-#   else if (week == 5)
-#   {
-#     cout << "Friday" << endl;
-#   }
-#   else if (week == 6)
-#   {
-#     cout << "Saturday" << endl;
-#   }
-#   else if (week == 7)
-#   {
-#     cout << "Sunday" << endl;
-#   }
-#   else
-#   {
-#     cout << "Invalid input! Please enter week number between 1-7." << endl;
-#   }
-#
-#   return 0;
-# }
+"""
+
+
+def giorno_della_settimana(n: int) -> str:
+
+    match n:
+        case 1:
+            return "Lunedì"
+        case 2:
+            return "Martedì"
+        case 3:
+            return "Mercoledì"
+        case 4:
+            return "Giovedì"
+        case 5:
+            return "Venerdì"
+        case 6:
+            return "Sabato"
+        case 7:
+            return "Domenica"
+        case _:
+            return "--"
+
+
+if __name__ == "__main__":
+
+    s = input("Scegli un giorno della settimana: ")
+    print("Il girono della settimana scelto: è ", giorno_della_settimana(int(s)))
