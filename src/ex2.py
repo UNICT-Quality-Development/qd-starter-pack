@@ -49,3 +49,15 @@
 #
 #   return 0;
 # }
+
+def ex2():
+    try:
+        week = input("Enter week number (1-7): ")
+        weeks = ("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
+        print(weeks[int(week)-1])
+
+    except:
+        print("please enter a number between 1 and 7")
+        exit(0)
+
+ex2()
