@@ -49,3 +49,11 @@
 #
 #   return 0;
 # }
+
+x = 10
+while(x < 1 or x > 7 ):
+    x = int(input("enter a week number(1-7): "))
+
+days = ['Monday', 'Tuesday', 'Wednessday', 'Thursday', 'Friday']
+
+print(days[x-1])
