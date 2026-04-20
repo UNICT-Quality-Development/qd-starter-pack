@@ -16,3 +16,20 @@
 #
 #   return 0;
 # }
+
+
+def verify():
+    try:
+        number = int(input("Insert a number to test if it's present in the secret array: "))
+    except:
+        print("Invalid input!")
+        return
+    
+    arr=[1,4,6,8,3,8,11,12,-4]
+    for i in arr:
+        if number == i:
+            print("The number is in the array")
+            return
+    print("The number is NOT in the array")
+
+verify()
