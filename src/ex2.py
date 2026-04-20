@@ -49,3 +49,15 @@
 #
 #   return 0;
 # }
+
+giorni = ["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"]
+
+try:
+    settimana = int(input("Inserisci il numero del giorno della settimana (1-7): "))
+    if 1 <= settimana <= 7:
+        print(giorni[settimana - 1])
+    else:
+        print("Input non valido! Inserisci un numero tra 1 e 7.")
+except ValueError:
+    print("Input non valido! Inserisci un numero intero valido.")
+    
