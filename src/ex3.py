@@ -41,3 +41,28 @@
 #
 #   return 0;
 # }
+
+
+def main():
+    textInput = input("Enter a famous name+surname, ex. BarackObama ")
+
+    match(textInput):
+        case "BarackObama":
+            print("44th president of the United States")
+        case "SandroPertini":
+            print("Former President of the Italian Republic")
+        case "NelsonMandela":
+            print("Former President of South Africa")
+        case "MahatmaGandhi":
+            print("Bapu")
+        case "DonaldKnuth":
+            print("Creator of LaTeX")
+        case "DennisRitchie":
+            print("Creator of C")
+        case _:
+            print("Invalid input! Please enter a good name!")
+    
+
+
+if __name__ == "__main__":
+     main()
