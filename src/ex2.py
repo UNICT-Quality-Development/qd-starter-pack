@@ -49,3 +49,10 @@
 #
 #   return 0;
 # }
+
+week = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+while True:
+    week_input = int(input("inserire giorno: "))
+    if week_input>=0 and week_input<=7:
+        break
+print("hai selezionato: ", week[week_input])
