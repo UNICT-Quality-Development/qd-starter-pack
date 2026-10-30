@@ -28,14 +28,14 @@
 #   O 2 vs 1 => red win
 #
 
-from random import randomint
+from random import randint
 
 TURN = 3
 MIN = 1
-MAX = 1
+MAX = 6
 
 def roll_dice() -> int:
-    return random.randint(MIN,MAX)
+    return randint(MIN,MAX)
 
 def roll_3() -> list[int]:
     rolls = []
