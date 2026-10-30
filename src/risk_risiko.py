@@ -60,8 +60,8 @@ if __name__ == "__main__":
     red = roll_3()
     blue = roll_3()
 
-    red = [6,3,2]
-    blue = [5,3,1]
+    #red = [6,3,2]
+    #blue = [5,3,1]
     print(f"Rosso {red}")
     print(f"blu {blue}")
     red_score,blue_score =  battle(red,blue)
