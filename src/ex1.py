@@ -48,9 +48,7 @@
 #   return 0;
 # }
 
-if __name__ == "__main__":
-    week = input("Che giorno è oggi? (1-7)")
-
+def print_day_of_week(week):
     if week == "1":
         print("Lunedi")
     elif week == "2":
@@ -67,4 +65,8 @@ if __name__ == "__main__":
         print("Domenica")
     else:
         print("Input non valido")
-  
+
+if __name__ == "__main__":
+    week = input("Che giorno è oggi? (1-7)")
+
+    print_day_of_week(week)
