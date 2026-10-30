@@ -30,14 +30,11 @@
 
 import random
 
-def lanciaTreDadi()-> int :
+def lanciaTreDadi()-> int:
     dadi = []
-    for i in range(0,3):
+    for _ in range(0,3):
         dadi.append(random.randint(1,6))
     return dadi
-    
-
-    
 
 dadi_def = lanciaTreDadi()
 dadi_att = lanciaTreDadi()
