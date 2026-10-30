@@ -35,6 +35,6 @@ if __name__ == "__main__":
         try:
             print(f"Division: {divide(num1, num2):g}")
         except ZeroDivisionError as e:
-            print(f"Division: {e}")   
+            print(f"Division: {e}")
     except ValueError:
         print("Errore: L'input non è valido. Inserisci un numero.")
