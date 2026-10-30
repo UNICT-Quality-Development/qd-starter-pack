@@ -6,4 +6,4 @@
 #
 import random
 
-print("the random numner is: " + str(random.randint(1,10)))
+print("the random numner is: " + str(random.randint(1, 10)))
