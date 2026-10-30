@@ -5,7 +5,10 @@
 #   The random number is: 4
 #
 
-import random
+from random import randint
 
-a = random.randint(0, 10)
-print(a)
+MIN_NUMBER = 0
+MAX_NUMBER = 10
+
+random_number = randint(MIN_NUMBER, MAX_NUMBER)
+print("The random number is: ", random_number)
