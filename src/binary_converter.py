@@ -20,7 +20,7 @@ if __name__ == "__main__":
 		else:
 			output+="0"
 	
-		number= number - (int(number/2)) - number%2
+		number //=2
 	output+=str(number)
 	output=output[::-1]
 	print ("The binary number is: ", output)	
