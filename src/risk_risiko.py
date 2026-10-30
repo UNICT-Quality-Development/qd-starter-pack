@@ -41,6 +41,8 @@ def roll_3():
 red = roll_3()
 blue = roll_3()
 
+red = [6,3,2]
+blue = [5,3,1]
 print(f"Rosso {red}")
 print(f"blu {blue}")
 
