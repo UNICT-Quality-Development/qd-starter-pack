@@ -73,7 +73,7 @@ def get_day_of_week(week: int) -> str:
 
 if __name__ == "__main__":
     try:
-        week = input("Enter week number(1-7): ")
-        print(get_day_of_week(week))
+        settimana = input("Enter week number(1-7): ")
+        print(get_day_of_week(settimana))
     except ValueError:
         print("Invalid input! Please enter week number between 1-7.")
