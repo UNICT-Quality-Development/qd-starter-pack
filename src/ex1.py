@@ -55,7 +55,7 @@ if __name__ == "__main__":
         print("Lunedi")
     elif week == "2":
         print("Martedi")
-    elif week == "3":   
+    elif week == "3":
         print("Mercoledi")
     elif week == "4":
         print("Giovedi")
@@ -66,5 +66,5 @@ if __name__ == "__main__":
     elif week == "7":
         print("Domenica")
     else:
-        print("Input non valido! Inserisci un numero tra 1 e 7.")
+        print("Input non valido")
   
