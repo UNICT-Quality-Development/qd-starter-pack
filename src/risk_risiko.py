@@ -30,24 +30,41 @@
 
 import random
 
-def roll_dice():
-    return random.randint(1,6)
-def roll_3():
-    dadi = []
-    for i in range(3):
-        dadi.append(roll_dice())
-    return sorted(dadi, reverse=True)
+TURN = 3
+MIN = 1
+MAX = 1
 
-red = roll_3()
-blue = roll_3()
+def roll_dice() -> int:
+    return random.randint(MIN,MAX)
 
-red = [6,3,2]
-blue = [5,3,1]
-print(f"Rosso {red}")
-print(f"blu {blue}")
+def roll_3() -> list[int]:
+    rolls = []
+    for _ in range(TURN):
+        rolls.append(roll_dice())
+    return sorted(rolls, reverse=True)
 
-for i in range(3):
-    if red[i] > blue[i]:
-        print(f"Rosso {red[i]} contro blu {blue[i]} => rosso vince")
-    else:
-        print(f"Rosso {red[i]} contro blu {blue[i]} => blu vince")
+
+def battle(red, blue) -> str:
+    red_score = 0
+    blue_score = 0
+    for i in range(TURN):
+        if red[i] > blue[i]:
+            print(f"Rosso {red[i]} contro blu {blue[i]} => rosso vince")
+            red_score += 1
+        else:
+            print(f"Rosso {red[i]} contro blu {blue[i]} => blu vince")
+            blue_score += 1
+    return red_score,blue_score
+
+if __name__ == "__main__":
+    red = roll_3()
+    blue = roll_3()
+
+    red = [6,3,2]
+    blue = [5,3,1]
+    print(f"Rosso {red}")
+    print(f"blu {blue}")
+    red_score,blue_score =  battle(red,blue)
+
+    print(f"{red_score} red win")
+    print(f"{blue_score} blue win")
