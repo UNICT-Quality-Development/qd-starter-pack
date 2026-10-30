@@ -13,6 +13,7 @@ if __name__ == "__main__":
 		exit ("Numeri negativi non ancora supportati! Abbiamo bisogno di personale per programmare funzioni complicate di questo tipo!")
 	output=""
 	while (number/2>=1):
+		# for debugging 
 		# print ("n: ",number)
 		if (number%2!=0): 
 			output+="1"
