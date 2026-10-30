@@ -20,8 +20,8 @@
 NUMBERS: list[int] = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
 
 
-def in_array(num: int) -> bool:
-    return num in NUMBERS
+def in_array(number: int) -> bool:
+    return number in NUMBERS
 
 
 if __name__ == "__main__":
