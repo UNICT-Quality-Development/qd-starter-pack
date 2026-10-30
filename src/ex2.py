@@ -49,3 +49,27 @@
 #
 #   return 0;
 # }
+
+DAYS: list[str] = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+]
+
+
+def week_day(day_number: int) -> str:
+    if 1 <= day_number <= 7:
+        return DAYS[day_number - 1]
+    return "Invalid input! Please enter week number between 1-7."
+
+
+if __name__ == "__main__":
+    try:
+        week = int(input("Enter week number(1-7): "))
+        print(week_day(week))
+    except ValueError:
+        print("Invalid input! Please enter a valid integer.")
