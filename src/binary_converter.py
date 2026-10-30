@@ -9,6 +9,8 @@ if __name__ == "__main__":
 		number= int(input ("Insert number: "))
 	except ValueError:
 		print ("Ma cosa scrivi! Devi scrivere un intero!")
+	if (number<0): 
+		exit ("Numeri negativi non ancora supportati! Abbiamo bisogno di personale per programmare funzioni complicate di questo tipo!")
 	output=""
 	while (number/2>=1):
 		# print ("n: ",number)
