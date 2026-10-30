@@ -27,9 +27,8 @@ def in_array(num: int) -> bool:
 if __name__ == "__main__":
     try:
         num = int(input("Insert number: "))
-        if in_array(num):
-            print(f"The number {num} is present in the array.")
-        else:
-            print(f"The number {num} is not present in the array.")
+        is_in_array: bool = in_array(num)
+        not_str: str = "" if is_in_array else "not "
+        print(f"The number {num} is {not_str}present in the array.")
     except ValueError:
         print("Invalid input! Please enter a valid integer.")
