@@ -27,3 +27,34 @@
 #   M 3 vs 3 => blue win
 #   O 2 vs 1 => red win
 #
+
+from random import randint
+
+def roll_dice() -> int:
+    return randint(1, 6)
+
+def simulate_risk_fight():
+    red = sorted([roll_dice() for i in range(3)])
+    Blue = sorted([roll_dice() for i in range(3)])
+
+    symbols = ["N", "M", "O"]
+
+    print("Red dice:")
+    for _ in range(len(red)):
+        print(f"{red[_]} ({symbols[_]})")
+
+    print("Blue dice:")
+    for _ in range(len(Blue)):
+        print(f"{Blue[_]} ({symbols[_]})")
+
+    
+    print(f"  A    B")
+    for i in range(len(red)):
+        if red[i] <= Blue[i]:
+            print(f"{symbols[i]} {red[i]} vs {Blue[i]} Blue win")
+        else:
+            print(f"{symbols[i]} {red[i]} vs {Blue[i]} Red win")
+
+
+if __name__ == "__main__":
+    simulate_risk_fight()
