@@ -28,7 +28,7 @@
 #   O 2 vs 1 => red win
 #
 
-import random
+from random import randomint
 
 TURN = 3
 MIN = 1
