@@ -47,3 +47,31 @@
 #
 #   return 0;
 # }
+
+
+def get_day_of_week(week: int) -> str:
+    if week == 1:
+        day = "Monday"
+    elif week == 2:
+        day = "Tuesday"
+    elif week == 3:
+        day = "Wednesday"
+    elif week == 4:
+        day = "Thursday"
+    elif week == 5:
+        day = "Friday"
+    elif week == 6:
+        day = "Saturday"
+    elif week == 7:
+        day = "Sunday"
+    else:
+        day = "Invalid input! Please enter week number between 1-7."
+    return day
+
+
+print("Enter week number(1-7): ")
+try:
+    input = int(input())
+    print(get_day_of_week(input))
+except ValueError:
+    print("Invalid input! Please enter week number between 1-7.")
