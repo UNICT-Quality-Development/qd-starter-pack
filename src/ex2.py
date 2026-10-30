@@ -66,5 +66,8 @@ def week_day(day_number: int) -> str:
     return "Invalid input! Please enter week number between 1-7."
 
 if __name__ == "__main__":
-    week: int = int(input("Enter week number(1-7): "))
-    print(week_day(week))
+    try:
+        week = int(input("Enter week number(1-7): "))
+        print(week_day(week))
+    except ValueError:
+        print("Invalid input! Please enter a valid integer.")
