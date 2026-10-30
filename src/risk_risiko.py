@@ -27,3 +27,37 @@
 #   M 3 vs 3 => blue win
 #   O 2 vs 1 => red win
 #
+
+import random
+
+def lanciaTreDadi()-> list[int]:
+    dadi = []
+    for _ in range(0, 3):
+        dadi.append(random.randint(1, 6))
+    return dadi
+
+dadi_def = lanciaTreDadi()
+dadi_att = lanciaTreDadi()
+
+#Li ordino dal più grande al più piccolo
+dadi_def.sort(reverse = True)
+dadi_att.sort(reverse = True)
+
+support = ["N", "M", "O"]
+
+print("Red dices:")
+for x in range(0, 3):
+    print(f"{dadi_att[x]} {support[x]}")
+
+
+print("Blue dices:")
+for x in range(0, 3):
+    print(f"{dadi_def[x]} {support[x]}")
+
+print("\n\n")
+print("  R    B")
+for x in range(0, 3):
+    if dadi_def[x] >= dadi_att[x]:
+        print(f"{support[x]} {dadi_att[x]} vs {dadi_def[x]} => blue win")
+    else:
+        print(f"{support[x]} {dadi_att[x]} vs {dadi_def[x]} => red win")
