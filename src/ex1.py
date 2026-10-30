@@ -49,23 +49,23 @@
 # }
 
 
-week = input("Enter week number(1-7): ")
+week = int(input("Enter week number(1-7): "))
 print("Inserted number ", week)
 
-if week == 1
+if week == 1:
     print("Monday")
-elif week == 2
+elif week == 2:
     print("Tuesday")
-elif week == 3
+elif week == 3:
     print("Wednesday")
-elif week == 4
+elif week == 4:
     print("Thursday")
-elif week == 5
+elif week == 5:
     print("Friday")
-elif week == 6
+elif week == 6:
     print("Saturday")
-elif week == 7
+elif week == 7:
     print("Sunday")
-else
+else:
     print("Invalid input! Please enter week number between 1-7.")
 print("\n")
