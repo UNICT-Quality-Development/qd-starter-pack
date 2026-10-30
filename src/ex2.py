@@ -60,9 +60,9 @@ DAYS: list[str] = [
     "Sunday"
 ]
 
-def week_day(week: int) -> str:
-    if  1 <= week <= 7:
-        return DAYS[week - 1]
+def week_day(day_number: int) -> str:
+    if  1 <= day_number <= 7:
+        return DAYS[day_number - 1]
     return "Invalid input! Please enter week number between 1-7."
 
 if __name__ == "__main__":
