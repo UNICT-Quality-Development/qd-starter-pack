@@ -27,3 +27,25 @@
 #   M 3 vs 3 => blue win
 #   O 2 vs 1 => red win
 #
+
+import random
+
+def roll_dice():
+    return random.randint(1,6)
+def roll_3():
+    dadi = []
+    for i in range(3):
+        dadi.append(roll_dice())
+    return sorted(dadi, reverse=True)
+
+red = roll_3()
+blue = roll_3()
+
+print(f"Rosso {red}")
+print(f"blu {blue}")
+
+for i in range(3):
+    if red[i] > blue[i]:
+        print(f"Rosso {red[i]} contro blu {blue[i]} => rosso vince")
+    else:
+        print(f"Rosso {red[i]} contro blu {blue[i]} => blu vince")
