@@ -61,11 +61,10 @@ def week_day(week: int) -> str:
         "Saturday",
         "Sunday"
     ]
-    
-    if week >= 1 and week <= 7:
+
+    if  1 <= week <= 7:
         return days[week]
-    else:
-        return days[0]
+    return days[0]
 
 if __name__ == "__main__":
     week: int = int(input("Enter week number(1-7): "))
