@@ -52,21 +52,22 @@
 def get_day_of_week(week: int) -> str:
     match week:
         case 1:
-            return "Monday"
+            day = "Monday"
         case 2:
-            return "Tuesday"
+            day = "Tuesday"
         case 3:
-            return "Wednesday"
+            day = "Wednesday"
         case 4:
-            return "Thursday"
+            day = "Thursday"
         case 5:
-            return "Friday"
+            day = "Friday"
         case 6:
-            return "Saturday"
+            day = "Saturday"
         case 7:
-            return "Sunday"
+            day = "Sunday"
         case _:
-            return "Invalid input! Please enter week number between 1-7."
+            day = "Invalid input! Please enter week number between 1-7."
+    return day
 
 
 if __name__ == "__main__":
