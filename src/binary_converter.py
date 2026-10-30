@@ -23,5 +23,5 @@ if __name__ == "__main__":
 		number //=2
 	output+=str(number)
 	output=output[::-1]
-	print ("The binary number is: ", output)	
+	print ("The binary number is:", output)	
 
