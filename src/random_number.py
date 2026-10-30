@@ -4,9 +4,12 @@
 #   Output:
 #   The random number is: 4
 #
-import random
+from random import randint
 
-def random_number(a: int, b: int) -> int:
-    return random.randint(a, b)
+MIN = 0
+MAX = 100
 
-print("The random number is:", random_number(0, 100))
+def random_number(min_number: int, max_number: int) -> int:
+    return randint(min_number, max_number)
+
+print("The random number is:", random_number(MIN, MAX))
