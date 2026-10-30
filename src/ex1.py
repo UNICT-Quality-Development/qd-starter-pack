@@ -48,24 +48,26 @@
 #   return 0;
 # }
 
+if __name__ == "__main__":
+    try:
+        week = int(input("Enter week number (1-7): "))
 
-week = int(input("Enter week number(1-7): "))
-print("Inserted number ", week)
-
-if week == 1:
-    print("Monday")
-elif week == 2:
-    print("Tuesday")
-elif week == 3:
-    print("Wednesday")
-elif week == 4:
-    print("Thursday")
-elif week == 5:
-    print("Friday")
-elif week == 6:
-    print("Saturday")
-elif week == 7:
-    print("Sunday")
-else:
-    print("Invalid input! Please enter week number between 1-7.")
-print("\n")
+        match week:
+            case 1:
+                print("Monday")
+            case 2:
+                print("Tuesday")
+            case 3:
+                print("Wednesday")
+            case 4:
+                print("Thursday")
+            case 5:
+                print("Friday")
+            case 6:
+                print("Saturday")
+            case 7:
+                print("Sunday")
+            case _:
+                print("Invalid input! Please enter a number between 1 and 7.")
+    except ValueError:
+        print("Invalid input! Please enter an integer.")
