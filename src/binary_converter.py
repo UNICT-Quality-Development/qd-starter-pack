@@ -4,8 +4,10 @@
 #   Insert number: 8
 #   The binary number is: 1000
 #
-
-number= int(input ("Insert number: "))
+try:
+	number= int(input ("Insert number: "))
+except ValueError:
+	print ("Ma cosa scrivi! Devi scrivere un intero!")
 output=""
 while (number/2>=1):
 	# print ("n: ",number)
