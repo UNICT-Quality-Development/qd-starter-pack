@@ -41,3 +41,28 @@
 #
 #   return 0;
 # }
+
+
+def get_description(name):
+    match name:
+        case "BarackObama":
+            return "44th president of the United States"
+        case "SandroPertini":
+            return "Former President of the Italian Republic"
+        case "NelsonMandela":
+            return "Former President of South Africa"
+        case "MahatmaGandhi":
+            return "Bapu"
+        case "DonaldKnuth":
+            return "Creator of LaTeX"
+        case "DennisRitchie":
+            return "Creator of C"
+        case "LautaroMartinez":
+            return "Il mio capitano"
+        case _:
+            return "Invalid input! Please enter a good name!"
+
+
+if __name__ == "__main__":
+    text_input = input("Enter a famous name+surname, ex. BarackObama\n")
+    print(get_description(text_input))
