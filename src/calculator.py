@@ -29,11 +29,9 @@ if __name__ == "__main__":
     try:
         num1 = float(input("Insert first number: "))
         num2 = float(input("Insert second number: "))
-
         print(f"\nSUM: {add(num1, num2):g}")
         print(f"Difference: {subtract(num1, num2):g}")
         print(f"Multiplication: {multiply(num1, num2):g}")
-        
         try:
             print(f"Division: {divide(num1, num2):g}")
         except ZeroDivisionError as e:
@@ -41,3 +39,4 @@ if __name__ == "__main__":
             
     except ValueError:
         print("Errore: L'input non è valido. Inserisci un numero.")
+        
