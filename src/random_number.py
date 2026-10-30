@@ -5,10 +5,25 @@
 #   The random number is: 4
 #
 
-import random 
+from random import randint
 
-range_min = input("Inserisci il numero minimo dell'intervallo: ")
-range_max = input("Inserisci il numero massimo dell'intervallo: ")
+def gen_random_number():
+    try:
+        range_min = int(input("Inserisci il numero minimo dell'intervallo: "))
+        range_max = int(input("Inserisci il numero massimo dell'intervallo: "))
+    except ValueError:
+        print("Per favore, inserisci un numero valido.")
+        return None
 
-rnd_number = random.randint(int(range_min), int(range_max))
-print(f"Il numero generato casualmente è: {rnd_number}")
+    if range_min > range_max:
+        print("Il numero minimo non può essere maggiore del numero massimo.")
+        return None
+
+    return randint(int(range_min), int(range_max))
+
+if __name__ == "__main__":
+    val = gen_random_number()
+    if val is not None:
+        print(f"Il numero generato casualmente è: {val}")
+    else:
+        print("Non è stato possibile generare un numero casuale a causa di input non validi.")
