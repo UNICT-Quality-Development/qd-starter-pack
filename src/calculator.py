@@ -11,21 +11,21 @@
 #   Division: 2
 #
 
-def sum(a: int, b: int) -> int:
-    return a + b
+def sum(x: int, y: int) -> int:
+    return x + y
 
-def diff(a: int, b: int) -> int:
-    return a - b
+def diff(x: int, y: int) -> int:
+    return x - y
 
-def mult(a: int, b: int) -> int:
-    return a * b
+def mult(x: int, y: int) -> int:
+    return x * y
 
-def div(a: int, b: int) -> float:
-    if b == 0:
+def div(x: int, y: int) -> float:
+    if y == 0:
         raise ZeroDivisionError("Impossibile dividere per zero")
-    return a / b
+    return x / y
 
-if __name__ == "__main__":    
+if __name__ == "__main__":
     a = int(input("Insert first number: "))
     b = int(input("Insert second number: "))
 

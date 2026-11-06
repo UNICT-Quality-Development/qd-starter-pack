@@ -11,7 +11,7 @@ tests: List[dict] = [
 ]
 
 @pytest.mark.parametrize("test", tests)
-def test_sum(test: dict) -> None:    
+def test_operations(test: dict) -> None:
     
     a = test["value1"]
     b = test["value2"]
@@ -20,3 +20,9 @@ def test_sum(test: dict) -> None:
 
     assert res == test["expected_result"]
 
+def test_fails_division() -> None:
+    a = 1
+    b = 0
+
+    with pytest.raises(ZeroDivisionError):
+        div(a, b)
