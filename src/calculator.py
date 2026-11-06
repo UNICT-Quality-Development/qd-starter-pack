@@ -27,8 +27,12 @@ def division(num1: float, num2: float) -> float:
 
 
 def main() -> None:
-    num1 = float(input("Insert first number: "))
-    num2 = float(input("Insert second number: "))
+    try:
+        num1 = float(input("Insert first number: "))
+        num2 = float(input("Insert second number: "))
+    except ValueError:
+        print("Invalid input. Please enter valid numbers.")
+        return
 
     sum_result = sum(num1, num2)
     difference_result = difference(num1, num2)
