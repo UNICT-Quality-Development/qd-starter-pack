@@ -43,24 +43,26 @@
 # }
 
 
-def get_description(name):
+def get_description(name: str) -> str:
     match name:
         case "BarackObama":
-            return "44th president of the United States"
+            description = "44th president of the United States"
         case "SandroPertini":
-            return "Former President of the Italian Republic"
+            description = "Former President of the Italian Republic"
         case "NelsonMandela":
-            return "Former President of South Africa"
+            description = "Former President of South Africa"
         case "MahatmaGandhi":
-            return "Bapu"
+            description = "Bapu"
         case "DonaldKnuth":
-            return "Creator of LaTeX"
+            description = "Creator of LaTeX"
         case "DennisRitchie":
-            return "Creator of C"
+            description = "Creator of C"
         case "LautaroMartinez":
-            return "Il mio capitano"
+            description = "Il mio capitano"
         case _:
-            return "Invalid input! Please enter a good name!"
+            description = "Invalid input! Please enter a good name!"
+
+    return description
 
 
 if __name__ == "__main__":
