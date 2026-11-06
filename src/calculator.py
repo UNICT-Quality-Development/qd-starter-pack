@@ -10,3 +10,6 @@
 #   Multiplication: 8
 #   Division: 2
 #
+
+def sum(a: float, b:float) -> float:
+    return float(a + b)
