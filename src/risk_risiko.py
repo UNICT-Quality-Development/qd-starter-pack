@@ -63,22 +63,24 @@ def controlla_dadi(dadi_att: list[int], dadi_def: list[int]) -> list[str]:
 
 
 if __name__ == "__main__":
-    dadi_def = lancia_tre_dadi()
-    dadi_att = lancia_tre_dadi()
-
-    print("Blu ha lanciato:\n")
-    print_dadi(dadi_def)
-    print("Rosso ha lanciato:\n")
-    print_dadi(dadi_att)
+    dadi_red = lancia_tre_dadi()
+    dadi_blue = lancia_tre_dadi()
 
     #Li ordino dal più grande al più piccolo
-    ordina_dadi(dadi_def)
-    ordina_dadi(dadi_att)
+    ordina_dadi(dadi_red)
+    ordina_dadi(dadi_blue)
 
-    vittorie = controlla_dadi(dadi_att, dadi_def)
+    print("Blue dices:\n")
+    print_dadi(dadi_red)
+    print("Red dices:\n")
+    print_dadi(dadi_blue)
+
+
+
+    vittorie = controlla_dadi(dadi_red, dadi_blue)
 
     print("\n\n")
     print("  R    B")
 
-    for x in range(0, DICE_COUNT):
-        print(f"{POSITION[x]} {dadi_att[x]} vs {dadi_def[x]} => {vittorie[x]} win")
+    for i in range(0, DICE_COUNT):
+        print(f"{POSITION[i]} {dadi_red[i]} vs {dadi_blue[i]} => {vittorie[i]} win")
