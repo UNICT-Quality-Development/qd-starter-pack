@@ -65,6 +65,6 @@ def get_description(name: str) -> str:
     return description
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":      # pragma: no cover
     text_input = input("Enter a famous name+surname, ex. BarackObama\n")
     print(get_description(text_input))
