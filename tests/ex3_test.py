@@ -1,3 +1,4 @@
+import sys
 from pytest_mock import MockerFixture
 from src import ex3
 
@@ -25,9 +26,13 @@ def test_main(mocker: MockerFixture) -> None:
     spy = mocker.spy(ex3, "main")
 
     # act
-    actual_outputs = [ex3.main(name) for name in inputs]
+    actual_outputs = []
+    for name in inputs:
+        mocker.patch.object(sys, "argv", ["ex3.py", name])
+        actual_outputs.append(ex3.main())
 
     # assert
     assert actual_outputs == expected_outputs
     assert spy.call_count == 7
-    assert [call.args[0] for call in spy.call_args_list] == inputs
+    assert spy.spy_return == expected_outputs[-1]
+    
