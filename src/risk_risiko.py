@@ -55,9 +55,9 @@ def controlla_dadi(dadi_att: list[int], dadi_def: list[int]) -> list[str]:
     vincitori = []
     for x in range(0, DICE_COUNT):
         if dadi_def[x] >= dadi_att[x]:
-            vincitori.add("blue")
+            vincitori.append("blue")
         else:
-            vincitori.add("red") 
+            vincitori.append("red") 
     return vincitori
 
 
