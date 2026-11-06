@@ -27,37 +27,58 @@
 #   M 3 vs 3 => blue win
 #   O 2 vs 1 => red win
 #
-
 import random
 
-def lanciaTreDadi()-> list[int]:
+DICE_COUNT = 3
+MIN_DICE = 1
+MAX_DICE = 6
+POSITION = ["N", "M", "O"]
+
+
+def lancia_tre_dadi()-> list[int]:
     dadi = []
-    for _ in range(0, 3):
-        dadi.append(random.randint(1, 6))
+    for _ in range(0, DICE_COUNT):
+        dadi.append(random.randint(MIN_DICE, MAX_DICE))
     return dadi
 
-dadi_def = lanciaTreDadi()
-dadi_att = lanciaTreDadi()
 
-#Li ordino dal più grande al più piccolo
-dadi_def.sort(reverse = True)
-dadi_att.sort(reverse = True)
-
-support = ["N", "M", "O"]
-
-print("Red dices:")
-for x in range(0, 3):
-    print(f"{dadi_att[x]} {support[x]}")
+def print_dadi(dadi: list[int]) -> None:
+    for x in range(0, DICE_COUNT):
+        print(f"{dadi[x]} {POSITION[x]}")
 
 
-print("Blue dices:")
-for x in range(0, 3):
-    print(f"{dadi_def[x]} {support[x]}")
+def ordina_dadi(dadi: list[int]) -> None:
+    dadi.sort(reverse = True)
 
-print("\n\n")
-print("  R    B")
-for x in range(0, 3):
-    if dadi_def[x] >= dadi_att[x]:
-        print(f"{support[x]} {dadi_att[x]} vs {dadi_def[x]} => blue win")
-    else:
-        print(f"{support[x]} {dadi_att[x]} vs {dadi_def[x]} => red win")
+
+def controlla_dadi(dadi_att: list[int], dadi_def: list[int]) -> list[str]:
+    vincitori = []
+    for x in range(0, DICE_COUNT):
+        if dadi_def[x] >= dadi_att[x]:
+            vincitori.add("blue")
+        else:
+            vincitori.add("red") 
+    return vincitori
+
+
+
+if __name__ == "__main__":
+    dadi_def = lancia_tre_dadi()
+    dadi_att = lancia_tre_dadi()
+
+    print("Blu ha lanciato:\n")
+    print_dadi(dadi_def)
+    print("Rosso ha lanciato:\n")
+    print_dadi(dadi_att)
+
+    #Li ordino dal più grande al più piccolo
+    ordina_dadi(dadi_def)
+    ordina_dadi(dadi_att)
+
+    vittorie = controlla_dadi(dadi_att, dadi_def)
+
+    print("\n\n")
+    print("  R    B")
+
+    for x in range(0, DICE_COUNT):
+        print(f"{POSITION[x]} {dadi_att[x]} vs {dadi_def[x]} => {vittorie[x]} win")
