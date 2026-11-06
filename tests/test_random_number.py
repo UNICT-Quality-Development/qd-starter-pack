@@ -8,14 +8,10 @@ from src import random_number
 tests: List[dict] = [
     {
         "mock_value": 4,
-        "mock_function": "randint",
-        "res": random_number.get_random_number,
         "expected_res": 4,
     },
     {
         "mock_value": 9,
-        "mock_function": "randint",
-        "res": random_number.get_random_number,
         "expected_res": 9,
     },
 ]
@@ -26,13 +22,13 @@ def test_get_random_number(mocker: MockerFixture, test: dict) -> None:
     # arrange
     mocker.patch.object(
         random_number,
-        test["mock_function"],
+        "randint",
         return_value=test["mock_value"],
     )
-    spy = mocker.spy(random_number, test["mock_function"])
+    spy = mocker.spy(random_number, "randint")
 
     # act
-    res = test["res"]()
+    res = random_number.get_random_number()
 
     # assert
     assert res == test["expected_res"]
