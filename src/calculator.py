@@ -12,25 +12,24 @@
 #
 
 def sum(a: int, b: int) -> int:
-    result = a + b
-    return result
+    return a + b
 
 def diff(a: int, b: int) -> int:
-    result = a - b
-    return result
+    return a - b
 
 def mult(a: int, b: int) -> int:
-    result = a * b
-    return result
+    return a * b
 
-def div(a: int, b: int) -> int:
-    result = a / b
-    return result
+def div(a: int, b: int) -> float:
+    if b == 0:
+        raise ZeroDivisionError("Impossibile dividere per zero")
+    return a / b
 
-a = int(input("Insert first number: "))
-b = int(input("Insert second number: "))
+if __name__ == "__main__":    
+    a = int(input("Insert first number: "))
+    b = int(input("Insert second number: "))
 
-print("SUM: " + str(sum(a, b)))
-print("Difference: " + str(diff(a, b)))
-print("Multiplication: " + str(mult(a, b)))
-print("Division: " + str(div(a, b)))
+    print("SUM: " + str(sum(a, b)))
+    print("Difference: " + str(diff(a, b)))
+    print("Multiplication: " + str(mult(a, b)))
+    print("Division: " + str(div(a, b)))
