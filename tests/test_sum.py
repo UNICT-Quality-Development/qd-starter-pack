@@ -7,3 +7,4 @@ def test_sum() -> None:
     assert sum(-5, -5) == -10
 
     assert isinstance(sum(1, 2), int)
+    
