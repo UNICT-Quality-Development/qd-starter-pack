@@ -26,7 +26,7 @@ def division(num1: float, num2: float) -> float:
     return float(num1) / float(num2) if num2 != 0 else 0
 
 
-def main():
+def main() -> None:
     num1 = float(input("Insert first number: "))
     num2 = float(input("Insert second number: "))
 
