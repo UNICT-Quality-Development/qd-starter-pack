@@ -57,10 +57,8 @@ def controlla_dadi(dadi_att: list[int], dadi_def: list[int]) -> list[str]:
         if dadi_def[x] >= dadi_att[x]:
             vincitori.append("blue")
         else:
-            vincitori.append("red") 
+            vincitori.append("red")
     return vincitori
-
-
 
 if __name__ == "__main__":
     dadi_red = lancia_tre_dadi()
@@ -70,9 +68,9 @@ if __name__ == "__main__":
     ordina_dadi(dadi_red)
     ordina_dadi(dadi_blue)
 
-    print("Blue dices:\n")
-    print_dadi(dadi_red)
     print("Red dices:\n")
+    print_dadi(dadi_red)
+    print("Blue dices:\n")
     print_dadi(dadi_blue)
 
 
