@@ -4,11 +4,7 @@
 #   Insert number: 8
 #   The binary number is: 1000
 #
-if __name__ == "__main__":	
-	try:
-		number= int(input ("Insert number: "))
-	except ValueError:
-		print ("Ma cosa scrivi! Devi scrivere un intero!")
+def converter(number):
 	if (number<0): 
 		exit ("Numeri negativi non ancora supportati! Abbiamo bisogno di personale per programmare funzioni complicate di questo tipo!")
 	output=""
@@ -23,5 +19,13 @@ if __name__ == "__main__":
 		number //=2
 	output+=str(number)
 	output=output[::-1]
+	return output
+
+if __name__ == "__main__":	
+	try:
+		number= int(input ("Insert number: "))
+	except ValueError:
+		print ("Ma cosa scrivi! Devi scrivere un intero!")
+	output= binary_converter(number)
 	print ("The binary number is:", output)	
 
