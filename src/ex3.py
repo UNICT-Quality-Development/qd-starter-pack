@@ -1,3 +1,5 @@
+"""Exercise 3: Famous persons lookup using pattern matching."""
+
 # What about implementhing this using "match" ?
 #
 # #include <iostream>
@@ -41,3 +43,28 @@
 #
 #   return 0;
 # }
+
+
+def get_famous_person(name: str) -> str:
+    """Return a description for a given famous person name."""
+    match name:
+        case "BarackObama":
+            description = "44th president of the United States"
+        case "SandroPertini":
+            description = "Former President of the Italian Republic"
+        case "NelsonMandela":
+            description = "Former President of South Africa"
+        case "MahatmaGandhi":
+            description = "Bapu"
+        case "DonaldKnuth":
+            description = "Creator of LaTeX"
+        case "DennisRitchie":
+            description = "Creator of C"
+        case _:
+            description = "Invalid input! Please enter a good name!"
+    return description
+
+
+if __name__ == "__main__":  # pragma: no cover
+    name_input = input("Enter a famous name+surname, ex. BarackObama \n")
+    print(get_famous_person(name_input))
