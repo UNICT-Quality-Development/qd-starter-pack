@@ -10,7 +10,7 @@ from src import calculator
     { "x": "8", "y": 2, "res": 10},
     { "x": 1.5, "y": 2, "res": 3.5},
 ])
-def test_sum(values):
+def test_sum(values: dict) -> None:
     sum_result: float = calculator.sum(values["x"], values["y"])
 
     assert sum_result == values["res"]
@@ -23,7 +23,7 @@ def test_sum(values):
     { "x": "8", "y": 2, "res": 6 },
     { "x": 1.5, "y": 2, "res": -0.5 },
 ])
-def test_difference(values):
+def test_difference(values: dict) -> None:
     difference_result: float = calculator.difference(values["x"], values["y"])
 
     assert difference_result == values["res"]
@@ -36,7 +36,7 @@ def test_difference(values):
     { "x": "8", "y": 2, "res": 16 },
     { "x": 1.5, "y": 2, "res": 3.0 },
 ])
-def test_multiplication(values):
+def test_multiplication(values: dict) -> None:
     multiplication_result: float = calculator.multiplication(values["x"], values["y"])
 
     assert multiplication_result == values["res"]
@@ -49,7 +49,7 @@ def test_multiplication(values):
     { "x": -5, "y": 2, "res": -2.5 },
     { "x": 10, "y": 0, "res": 0 },
 ])
-def test_division(values):
+def test_division(values: dict) -> None:
     division_result: float = calculator.division(values["x"], values["y"])
 
     assert division_result == values["res"]
