@@ -47,3 +47,38 @@
 #
 #   return 0;
 # }
+
+def get_weekday(week: int) -> str:
+    """Return the weekday corresponding to a number from 1 to 7."""
+    match week:
+        case 1:
+            return "Monday"
+        case 2:
+            return "Tuesday"
+        case 3:
+            return "Wednesday"
+        case 4:
+            return "Thursday"
+        case 5:
+            return "Friday"
+        case 6:
+            return "Saturday"
+        case 7:
+            return "Sunday"
+        case _:
+            return "Invalid input! Please enter a number between 1 and 7."
+
+
+def main() -> None:
+    """Read a week number and print the corresponding weekday."""
+    try:
+        week = int(input("Enter week number (1-7): "))
+    except ValueError:
+        print("Invalid input! Please enter an integer.")
+        return
+
+    print(get_weekday(week))
+
+
+if __name__ == "__main__":
+    main()
