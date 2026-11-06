@@ -7,8 +7,8 @@
 
 from random import randint
 
-MIN_RANDOM_NUMBER: 1
-MAX_RANDOM_NUMBER: 10
+MIN_RANDOM_NUMBER = 1
+MAX_RANDOM_NUMBER = 10
 
 def get_random_number() -> int:
     return randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
