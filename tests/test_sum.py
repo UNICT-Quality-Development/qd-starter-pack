@@ -6,5 +6,4 @@ def test_sum() -> None:
     assert sum(0, 0) == 0
     assert sum(-5, -5) == -10
 
-    assert type(sum(1, 2)) == int
-    
+    assert isinstance(sum(1, 2), int)
