@@ -35,4 +35,3 @@ def test_main(mocker: MockerFixture) -> None:
     assert actual_outputs == expected_outputs
     assert spy.call_count == 7
     assert spy.spy_return == expected_outputs[-1]
-    
