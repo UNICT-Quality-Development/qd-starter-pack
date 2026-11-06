@@ -25,7 +25,7 @@ def multiply(a: int, b: int) -> int:
 
 def divide(a: int, b: int) -> float:
     if b == 0:
-        return None
+        return 0
     return a / b
 
 def main() -> None:
