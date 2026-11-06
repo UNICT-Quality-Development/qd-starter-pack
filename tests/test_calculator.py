@@ -1,4 +1,4 @@
-from src.calculator import sum, difference, multiplication, division
+from src.calculator import difference, division, multiplication, sum
 
 
 def test_sum() -> None:
