@@ -1,5 +1,4 @@
 from src import calculator
-import pytest
 
 def test_sum() -> None:
     assert calculator.sum(3, 4) == 7
@@ -28,4 +27,4 @@ def test_divide() -> None:
     assert calculator.divide(-4, 2) == -2
     assert calculator.divide(-6, -3) == 2
     assert calculator.divide(0, 5) == 0
-    assert calculator.divide(5, 0) == None
+    assert calculator.divide(5, 0) is None

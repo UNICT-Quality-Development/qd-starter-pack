@@ -11,6 +11,9 @@
 #   Division: 2
 #
 
+import sys
+
+
 def sum(a: int, b: int) -> int:
     return a + b
 
@@ -31,7 +34,7 @@ def main() -> None:
         b = int(input("Insert second number: "))
     except ValueError:
         print("Please insert valid numbers.")
-        exit(1)
+        sys.exit(1)
 
     print("SUM", sum(a,b))
     print("Difference", subtract(a,b))
