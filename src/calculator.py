@@ -10,22 +10,35 @@
 #   Multiplication: 8
 #   Division: 2
 #
-def sum(a, b):
-    return a + b   
-def difference(a, b):
+
+
+def add(a: float, b: float) -> float:
+    return a + b
+
+
+def subtract(a: float, b: float) -> float:
     return a - b
-def multiplication(a, b):
+
+
+def multiply(a: float, b: float) -> float:
     return a * b
-def division(a, b):
+
+
+def divide(a: float, b: float) -> float | str:
     if b == 0:
         return "Error: Division by zero"
     return a / b
 
-def main():
+
+def main() -> None:  # pragma: no cover
     a = float(input("Insert first number: "))
     b = float(input("Insert second number: "))
 
-    print("\nSUM:", sum(a, b))
-    print("Difference:", difference(a, b))
-    print("Multiplication:", multiplication(a, b))
-    print("Division:", division(a, b))  
+    print("\nSUM:", add(a, b))
+    print("Difference:", subtract(a, b))
+    print("Multiplication:", multiply(a, b))
+    print("Division:", divide(a, b))
+
+
+if __name__ == "__main__":  # pragma: no cover
+    main()
