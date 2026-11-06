@@ -17,20 +17,25 @@
 #   return 0;
 # }
 
-numbers = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
+NUMBERS = [3, 4, 5, 1, 2, 3, 4, 9, 13, 0]
 
-try:
-    input_number = int(input("Insert number: "))
-    is_present = False
 
-    for number in numbers:
-        if input_number == number:
-            is_present = True
-            break
+def is_number_present(number: int) -> bool:
+    return number in NUMBERS
 
-    if is_present:
+
+def main() -> None:
+    try:
+        input_number = int(input("Insert number: "))
+    except ValueError:
+        print("Invalid input! Please enter an integer.")
+        return
+
+    if is_number_present(input_number):
         print(f"The number {input_number} is present in the array.")
     else:
         print(f"The number {input_number} is not present in the array.")
-except ValueError:
-    print("Invalid input! Please enter an integer.")
+
+
+if __name__ == "__main__":
+    main()
