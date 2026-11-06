@@ -1,28 +1,25 @@
 from pytest_mock import MockerFixture
-import example
+import src.random_number as random_module
+from src.random_number import random_number
 
 
-def test_a_1(mocker: MockerFixture) -> None:
-    mock_random_return = 0.4
-    mocker.patch.object(example, "random", return_value=mock_random_return)
-    spy = mocker.spy(example, "random")
+def test_random_number_mocked(mocker: MockerFixture) -> None:
+    mock_randint_return = 42
+    mocker.patch.object(
+        random_module.random, "randint", return_value=mock_randint_return
+    )
+    spy = mocker.spy(random_module.random, "randint")
 
-    res = example.a()
+    res = random_number()
 
-    assert res is False
+    assert res == 42
     assert spy.call_count == 1
-    assert spy.spy_return == mock_random_return
+    assert spy.spy_return == mock_randint_return
 
 
-def test_a_2(mocker: MockerFixture) -> None:
-    mock_random_return = 0.6
-    mocker.patch.object(example, "random", return_value=mock_random_return)
-    spy = mocker.spy(example, "random")
+def test_random_number_range_and_type() -> None:
+    res = random_number()
 
-    res = example.a()
-
-    assert res is True
-    assert spy.call_count == 1
-    assert spy.spy_return == mock_random_return
-
-
+    assert isinstance(res, int)
+    assert 1 <= res <= 100
+    
