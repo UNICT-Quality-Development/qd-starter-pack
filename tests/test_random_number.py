@@ -22,4 +22,3 @@ def test_random_number_range_and_type() -> None:
 
     assert isinstance(res, int)
     assert 1 <= res <= 100
-    
