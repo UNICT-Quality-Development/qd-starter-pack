@@ -42,4 +42,4 @@ def main() -> None:
     print("Division", divide(a,b))
 
 if __name__ == "__main__": #pragma: no cover
-    main()    
+    main()
