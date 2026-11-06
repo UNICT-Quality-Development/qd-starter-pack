@@ -1,6 +1,5 @@
 import pytest
 from typing import List
-from pytest_mock import MockerFixture
 from src.calculator import sum, diff, mult, div
 
 
@@ -12,7 +11,7 @@ tests: List[dict] = [
 ]
 
 @pytest.mark.parametrize("test", tests)
-def test_sum(mocker: MockerFixture, test: dict) -> None:    
+def test_sum(test: dict) -> None:    
     
     a = test["value1"]
     b = test["value2"]
